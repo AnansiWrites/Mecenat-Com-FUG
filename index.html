@@ -386,6 +386,99 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 @media (max-width:1180px){.rule{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.rule{grid-template-columns:1fr}}
 
+
+.prov{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;margin-top:10px;align-self:flex-start}
+.prov.s{background:var(--st-c-bg);color:var(--st-c)}.prov.p{background:var(--st-d-bg);color:var(--st-d)}.prov.a{background:transparent;color:var(--teal);border:1.5px dashed var(--teal)}
+.prov-legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center;font-size:13px;color:var(--ink-2)}
+.pwrap{overflow-x:auto;margin-top:22px;padding:14px;border:1px solid var(--line);border-radius:var(--radius-l);background:var(--surface);box-shadow:var(--shadow)}
+.pgrid{display:grid;grid-template-columns:150px repeat(5,minmax(105px,1fr)) 128px;gap:8px;min-width:900px}
+.ph{font-size:13px;font-weight:700;color:var(--ink-2);padding:0 6px 4px}
+.prow{display:contents}
+.prow.hide>*{display:none}
+.pcell{border-radius:12px;padding:10px 11px;font-size:13px;line-height:1.45;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c,var(--line));transition:transform .25s,box-shadow .25s}
+.pcell:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.pcell.who{background:var(--surface-2);border-left:0;font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:10px}
+.pcell.who i{width:34px;height:34px;border-radius:50%;background:var(--mint);display:grid;place-items:center;flex:none;color:var(--green)}
+.pcell.ind{background:var(--mint);border:0;color:var(--green);font-weight:700}
+.c-com{--c:var(--teal)}.c-mec{--c:var(--green)}.c-ac{--c:var(--navy)}.c-gov{--c:var(--leaf)}
+.plegend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:13px;color:var(--ink-2)}
+.plegend span{display:inline-flex;align-items:center;gap:7px}
+.plegend span::before{content:"";width:12px;height:12px;border-radius:3px;background:var(--c)}
+
+
+.years{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px;margin-top:10px;position:relative}
+.yr{font-size:12.5px;color:var(--ink-2);text-align:center}
+.ybar{height:12px;border-radius:999px;background:var(--surface-2)}
+.ybar.done{background:var(--green)}
+.phases{display:grid;grid-template-columns:3fr 7fr;gap:6px;margin-top:10px}
+.phases div{text-align:center;font-weight:700;font-size:14px;padding:8px;border-radius:12px;background:var(--mint);color:var(--green)}
+.phases div+div{background:var(--surface-2);color:var(--ink-2)}
+.marker{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:13.5px;font-weight:700}
+.marker::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--gold)}
+.reglink{font-size:12.5px;font-weight:600;color:var(--green)}
+.temps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:16px}
+.temps .card{padding:16px}
+.temps .card b{display:block;margin-bottom:4px}
+@media (max-width:980px){.temps{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.temps{grid-template-columns:1fr}.years{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+
+.lt{cursor:help}
+.jt{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 7px;border-radius:999px;background:var(--gold);color:#0f4d3a;font-size:13px;font-weight:800;margin-right:8px;vertical-align:middle}
+.lc-legend{display:flex;flex-wrap:wrap;align-items:center;gap:4px 2px;font-size:12.5px;color:var(--ink-2);margin:-4px 0 10px}
+.lc-legend .lt{width:20px;height:20px;font-size:11px;border-radius:6px;margin:0 5px 0 10px}
+.lc-legend .lt:first-child{margin-left:0}
+#tip{position:fixed;z-index:100;background:#0f4d3a;color:#fff;font-size:12.5px;line-height:1.4;padding:7px 11px;border-radius:8px;pointer-events:none;opacity:0;transition:opacity .15s;max-width:280px;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+#tip.on{opacity:1}
+
+
+.touch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:20px}
+.touch .card{border-top:4px solid var(--c,var(--green));padding:18px}
+.touch .card h4{margin-bottom:10px}
+.touch ul{margin:0;padding-left:18px;font-size:13.5px}
+.touch li{margin:5px 0}
+.flowline{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin-top:18px}
+.flowline .st2{flex:1 1 140px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13.5px;position:relative}
+.flowline .st2 b{display:block;font-size:12.5px;color:var(--green);margin-bottom:4px}
+.flowline .st2.fork{background:var(--mint);border-color:transparent}
+@media (max-width:1180px){.touch{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.touch{grid-template-columns:1fr}}
+
+
+.cdtbl td{font-size:13px}
+.cdtbl td:first-child{font-weight:700;font-size:14px;white-space:nowrap}
+.cdtbl tr.off td:first-child::after{content:"hors ligne";display:inline-block;margin-left:8px;font-size:11px;font-weight:700;color:var(--ink-2);background:var(--surface-2);padding:2px 7px;border-radius:999px}
+.cdtbl tr.on td:first-child::after{content:"en ligne";display:inline-block;margin-left:8px;font-size:11px;font-weight:700;color:var(--green);background:var(--mint);padding:2px 7px;border-radius:999px}
+.mock-wrap{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:26px;align-items:start;margin-top:24px}
+.browser{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;color:#12241d}
+.bbar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#eef2f0;border-bottom:1px solid #dde7e2}
+.bbar i{width:10px;height:10px;border-radius:50%;background:#cfd8d3}
+.bbar span{margin-left:12px;font-size:12px;color:#5b6d65;background:#fff;border-radius:999px;padding:3px 12px}
+.mock{padding:22px;position:relative}
+.fake{position:absolute;top:14px;right:14px;font-size:11.5px;font-weight:800;color:#8a6a00;background:#fff3c7;padding:4px 10px;border-radius:999px}
+.mock h5{margin:0;font-size:22px;font-weight:800;color:#0f4d3a}
+.mock .sub{font-size:13px;color:#4a5d55;margin-top:4px}
+.mk{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.mk div{background:#d9f2ea;border-radius:12px;padding:12px}
+.mk b{display:block;font-size:20px;color:#13926e}
+.mk small{font-size:11.5px;color:#3d5249}
+.mgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:16px}
+.mbars div{margin-bottom:9px;font-size:12.5px}
+.mbars .tr{height:9px;border-radius:999px;background:#eef6f2;margin-top:4px;overflow:hidden}
+.mbars .tr span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#13926e,#a5cc78)}
+.mmap svg{width:100%;height:auto}
+.mwall{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.mwall span{font-size:11.5px;padding:4px 10px;border-radius:999px;background:#eef6f2;color:#0f4d3a}
+.mwall span.f{background:#0f4d3a;color:#fff}
+.mcta{display:inline-block;margin-top:14px;background:#13926e;color:#fff;font-weight:700;font-size:13px;padding:9px 16px;border-radius:999px}
+.phone{border:10px solid #12241d;border-radius:32px;overflow:hidden;background:#fff;color:#12241d;box-shadow:var(--shadow)}
+.phone .mock{padding:14px}
+.phone h5{font-size:17px}
+.phone .mk{grid-template-columns:1fr 1fr}
+.phone .mk div:last-child{grid-column:1/-1}
+.phone .mk b{font-size:16px}
+@media (max-width:980px){.mock-wrap{grid-template-columns:1fr}.phone{max-width:260px;justify-self:center}.mgrid{grid-template-columns:1fr}}
+
 /* scrim + responsive */
 .scrim{display:none}
 @media (max-width:1180px){.g5{grid-template-columns:repeat(3,minmax(0,1fr))}.g4,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.months{grid-template-columns:repeat(4,minmax(0,1fr))}}
@@ -425,6 +518,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 </head>
 <body class="on-hero">
 <div class="scrim" id="scrim"></div>
+<div id="tip" role="tooltip"></div>
 <div class="app">
   <aside class="side" id="side" aria-label="Sommaire">
     <div class="side-head">
@@ -503,7 +597,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 <section class="view" id="v-sources" data-id="sources" data-group="Préambule" data-n="2" data-title="Les sources consolidées">
   <p class="where">Préambule</p>
   <h2 class="h-view">Les sources consolidées</h2>
-  <p class="lead">Cinq documents de travail sur le mécénat, de mai 2025 à octobre 2026. Ils partagent un même socle et divergent sur les choix opérationnels. Dans la suite, chaque source est désignée par sa lettre : A pour Co-Influence 2025, B pour le dossier fondateurs, C pour le document de mai 2026, D pour le deck 2026.</p>
+  <p class="lead">Cinq documents de travail sur le mécénat, de mai 2025 à octobre 2026. Ils partagent un même socle et divergent sur les choix opérationnels. Dans la suite, chaque source est désignée par sa lettre : A pour Co-Influence 2025, B pour le dossier fondateurs, C pour le document de mai 2026, D pour le deck 2026. La convention ADUG, qui encadre l’ensemble, est présentée à part.</p>
   <div class="timeline stagger">
     <div class="tl-item"><div class="tl-date">23 mai 2025</div><div class="card lift"><div class="tl-head"><h4><span class="lt">A</span>Discours de cause</h4><span class="own">Co-Influence</span></div><p class="muted small" style="margin-top:6px">Cause « Bâtir un futur désirable au cœur de l’Amazonie », 4 axes, 5 projets phares, grille de reconnaissance à valider.</p></div></div>
     <div class="tl-item"><div class="tl-date">8 juillet 2025</div><div class="card lift"><div class="tl-head"><h4><span class="lt">A</span>Stratégie et plan d’actions fundraising</h4><span class="own">Co-Influence</span></div><p class="muted small" style="margin-top:6px">Objectif révisé à 3 M€ (2026-2030), cibles principales et secondaires, cercle des mécènes locaux, comité de soutien, rôles, outils.</p></div></div>
@@ -512,6 +606,32 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="tl-item"><div class="tl-date">Août à octobre 2026</div><div class="card lift"><div class="tl-head"><h4><span class="lt">D</span>Stratégie de fundraising pour les mécènes</h4><span class="own">Fondation</span></div><p class="muted small" style="margin-top:6px">Base Pappers de 453 entreprises, cinq priorités, cercles de dons, pyramide, Giving Day, 90 premiers jours, risques et indicateurs.</p></div></div>
   </div>
 </section>
+<section class="view" id="v-cadre" data-id="cadre" data-group="Préambule" data-n="" data-title="Le cadre : la convention ADUG">
+  <p class="where">Préambule</p>
+  <h2 class="h-view">Le cadre : la convention ADUG</h2>
+  <div class="meta-row"><span class="st st-b">Échéance de phase 1 : 31 décembre 2026</span><span class="own">Cadre contractuel</span></div>
+  <p class="lead">La Fondation porte le volet Mécénat de l’ADUG, financé par l’ANR au titre de France 2030. La convention n’est pas une source de stratégie parmi d’autres : elle fixe les engagements que toute stratégie doit tenir. Les ambitions des documents de travail viennent au-dessus de ce socle.</p>
+  <div class="card block">
+    <div class="years"><div><div class="yr">2024</div><div class="ybar done"></div></div><div><div class="yr">2025</div><div class="ybar done"></div></div><div><div class="yr">2026</div><div class="ybar done"></div></div><div><div class="yr">2027</div><div class="ybar"></div></div><div><div class="yr">2028</div><div class="ybar"></div></div><div><div class="yr">2029</div><div class="ybar"></div></div><div><div class="yr">2030</div><div class="ybar"></div></div><div><div class="yr">2031</div><div class="ybar"></div></div><div><div class="yr">2032</div><div class="ybar"></div></div><div><div class="yr">2033</div><div class="ybar"></div></div></div>
+    <div class="phases"><div>Phase 1 · années 1 à 3</div><div>Phase 2 · années 4 à 10, abondement</div></div>
+    <p class="marker">Octobre 2026 : fin de phase 1, le temps du bilan</p>
+  </div>
+  <div class="grid g3 block stagger">
+    <div class="card mint"><h4>31 décembre 2026</h4><p class="small">Fin de la phase 1, démarrée le 1er janvier 2024 pour 36 mois.</p></div>
+    <div class="card mint"><h4>Début 2027</h4><p class="small">Compte rendu de fin de phase 1 dans les deux mois, relevés de dépenses dans les trois mois.</p></div>
+    <div class="card mint"><h4>2027, année 4</h4><p class="small">L’évaluation de la phase 1 conditionne les postes et l’abondement de la phase 2.</p></div>
+  </div>
+  <h3 class="block">Les engagements du volet Mécénat</h3>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><p class="tagline">Jalon 1</p><h4>Campagnes de levée de fonds</h4><p class="small muted">3 grands donateurs, 5 entreprises locales, 50 défiscalisations grand public sur la phase 1 ; 0,24 M€ en année 3.</p></div>
+    <div class="card"><p class="tagline">Jalon 2</p><h4>Appels à projets des grandes fondations</h4><p class="small muted">Nombre de mécènes et montants collectés par an.</p></div>
+    <div class="card"><p class="tagline">Jalon 3</p><h4>Magazine, conférences, radio</h4><p class="small muted">4 magazines, 9 conférences-débats avec la CCIG et 36 émissions radio par an.</p></div>
+  </div>
+  <p class="muted small" style="margin-top:12px">S’y ajoutent quatre jalons communs avec la DFPU : suivi trimestriel, visites d’entreprises, newsletter aux entreprises, Club des Alumni. Détail en partie VI.</p>
+  <div class="note"><strong>L’échéance la plus proche de toute la stratégie :</strong> le jalon 1 se mesure à la fin de la phase 1, le 31 décembre 2026. Son état reste à documenter pour le compte rendu.</div>
+  <p class="f2030">Sources : contrat attributif ANR-22-ASDR-0003 et annexe 5, dossier ADUG (jalons et moyens), état connu en octobre 2026.</p>
+</section>
+
 
 <section class="view" id="v-forces" data-id="forces" data-group="Préambule" data-n="" data-title="Forces et limites des approches">
   <p class="where">Préambule</p>
@@ -540,6 +660,15 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <p class="lead">L’adhésion, c’est faire monter une cible d’une marche à l’autre. L’engagement stratifié, c’est lui proposer la marche qui correspond à sa capacité et à sa posture. Sélectionnez une marche.</p>
   <div class="stairs" id="stairs" role="group" aria-label="Marches de l’engagement"></div>
   <div class="c-detail" id="stair-detail" aria-live="polite"></div>
+
+  <h3 class="block">Les quatre temps de la sollicitation</h3>
+  <p class="muted small" style="margin-top:6px;max-width:74ch">Le plan opérationnel de D regroupe ces marches en quatre temps. Repère du plan 2025 : il faut en moyenne quatre premiers rendez-vous pour un donateur.</p>
+  <div class="temps">
+    <div class="card"><b>Attirer</b><p class="small muted">Découvrir et s’intéresser : LinkedIn, Lemag’, émissions, presse, newsletter, relais consulaires.</p><div class="meta-row"><span class="own">Porté par : Communication</span></div></div>
+    <div class="card"><b>Rencontrer</b><p class="small muted">Fiche prospect, cultivation, rendez-vous et demande précise, relance, convention.</p><div class="meta-row"><span class="own">Porté par : Mécénat</span></div></div>
+    <div class="card"><b>Fidéliser</b><p class="small muted">S’engager et renouveler : reçu et remerciement rapides, reporting d’impact, cercle, rapport annuel.</p><div class="meta-row"><span class="own">Porté par : Mécénat et Communication</span></div></div>
+    <div class="card"><b>Faire essaimer</b><p class="small muted">Recommander : cooptation, témoignages, mécène ambassadeur, co-construction.</p><div class="meta-row"><span class="own">Porté par : Mécénat et Communication</span></div></div>
+  </div>
 </section>
 
 <section class="view" id="v-granularite" data-id="granularite" data-group="I. Interdépendance mécénat et com" data-n="" data-title="Pourquoi la granularité">
@@ -616,7 +745,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="card lift"><p class="tagline">Argument 3</p><h4>La performance RSE</h4><p class="muted small">Un engagement de proximité mesurable, associé à la réussite de la jeunesse et à la recherche amazonienne.</p></div>
   </div>
   
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>Avec les 4 axes, la com produirait quatre piliers de contenus et une arborescence de site en quatre entrées.</p></div><div class="lc-row"><span class="lt">B</span><p>Le dossier fondateurs confirme les 4 axes et y adosse les valeurs audace, solidarité, résilience, inclusion, ouverture : la com aurait une charte de messages stable.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec 5 priorités, la com produirait cinq rubriques, dont deux consacrées aux étudiants, et devrait refondre les supports déjà alignés sur les 4 axes.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> un cadre unique (axes ou priorités) et une liste de valeurs fixée, qui deviennent l’ossature de tous les supports.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>Avec les 4 axes, la com produirait quatre piliers de contenus et une arborescence de site en quatre entrées.</p></div><div class="lc-row"><span class="lt">B</span><p>Le dossier fondateurs confirme les 4 axes et y adosse les valeurs audace, solidarité, résilience, inclusion, ouverture : la com aurait une charte de messages stable.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec 5 priorités, la com produirait cinq rubriques, dont deux consacrées aux étudiants, et devrait refondre les supports déjà alignés sur les 4 axes.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> un cadre unique (axes ou priorités) et une liste de valeurs fixée, qui deviennent l’ossature de tous les supports.</div></div>
 </section>
 
 <section class="view" id="v-rayonnement" data-id="rayonnement" data-group="II. Fondations" data-n="5" data-title="Rayonnement par échelle">
@@ -647,11 +776,85 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="meta-row"><span class="st st-a">Absent</span><span class="own">Porté par : Mécénat</span></div>
   <p class="lead">Ce tri détermine le cadre fiscal, la nature de la contrepartie et donc le discours. Survolez une carte pour voir le cadre et la promesse (touchez-la sur mobile).</p>
   <div class="grid g5 block" id="soutiens-grid"></div>
+  <div class="prov-legend"><span class="prov s" style="margin:0">Issu des sources</span><span class="prov p" style="margin:0">Partiellement dans les sources</span><span class="prov a" style="margin:0">Ajout de clarification</span></div>
   <div class="grid g2 block">
-    <div class="note" style="margin-top:0"><strong>Le parrainage n’est pas du mécénat.</strong> Il peut convenir à un événement (gala, Giving Day) mais suppose une facture. Pour une fondation sans personnalité morale, il faut établir qui facture et par quel circuit comptable de l’UG.</div>
+    <div class="note" style="margin-top:0"><strong>Le parrainage complète le mécénat.</strong> Ce n’est pas un don, mais un partenariat de visibilité qui s’associe très bien aux temps forts : gala, Giving Day, remises de prix. Il se formalise par un contrat et une facture ; le circuit avec l’UG reste à organiser.</div>
     <div class="note" style="margin-top:0"><strong>Les financeurs publics ne sont pas des mécènes.</strong> ADEME, ANCT ou Banque des Territoires relèvent du cofinancement : autres circuits, autres délais, autre discours. Le CNES, établissement public, se qualifie au cas par cas.</div>
   </div>
 </section>
+
+<section class="view" id="v-parcours-soutien" data-id="parcours-soutien" data-group="III. Écosystème" data-n="" data-title="Un parcours par type de soutien">
+  <p class="where">Partie III · Écosystème</p>
+  <h2 class="h-view">Un parcours pour chaque type de soutien</h2>
+  <div class="meta-row"><span class="st st-d">Proposition à valider</span><span class="own">Porté par : Mécénat et Communication</span></div>
+  <p class="lead">Chaque soutien part d’un premier contact, passe par une porte d’entrée, se formalise selon son cadre et alimente au moins un indicateur. Un même acteur peut combiner plusieurs soutiens : une PME en compétences puis en don, un grand groupe en mécénat et en parrainage du gala.</p>
+  <div class="filters" id="pfilters" role="group" aria-label="Isoler un parcours">
+    <button class="chip-btn" aria-pressed="true" data-k="all">Tous les soutiens</button>
+    <button class="chip-btn" aria-pressed="false" data-k="don">Donateur</button>
+    <button class="chip-btn" aria-pressed="false" data-k="mec">Mécène</button>
+    <button class="chip-btn" aria-pressed="false" data-k="nat">Nature ou compétences</button>
+    <button class="chip-btn" aria-pressed="false" data-k="spo">Parrain ou sponsor</button>
+    <button class="chip-btn" aria-pressed="false" data-k="pub">Cofinanceur public</button>
+  </div>
+  <div class="pwrap"><div class="pgrid" id="pgrid">
+    <div class="ph">Soutien</div><div class="ph">Premier contact</div><div class="ph">Porte d’entrée</div><div class="ph">Engagement</div><div class="ph">Formalisation</div><div class="ph">Reconnaissance et suite</div><div class="ph">Indicateur</div>
+    <div class="prow" data-k="don"><div class="pcell who"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></i>Donateur</div><div class="pcell c-com">Publication, QR code d’une fiche projet, Giving Day</div><div class="pcell c-com">Site : page projet ou page de don</div><div class="pcell c-com">Don ponctuel ou régulier, en ligne</div><div class="pcell c-ac">Reçu fiscal, sous réserve des outils de dons en ligne</div><div class="pcell c-com">Nouvelles du projet soutenu, invitation au prochain temps fort</div><div class="pcell ind">J1 défiscalisations</div></div>
+    <div class="prow" data-k="mec"><div class="pcell who"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 12h4M10 16h4"/></svg></i>Mécène</div><div class="pcell c-mec">Rendez-vous de prospection, événement, recommandation</div><div class="pcell c-com">Fiche projet, plaquette, page mécènes</div><div class="pcell c-mec">Choix d’un projet et d’un cercle</div><div class="pcell c-ac">Convention de mécénat, encaissement, reçu fiscal</div><div class="pcell c-com">Programme de reconnaissance du cercle, bilan d’impact, renouvellement</div><div class="pcell ind">J1 grands donateurs, J2 CA mécénat</div></div>
+    <div class="prow" data-k="nat"><div class="pcell who"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/></svg></i>Nature ou compétences</div><div class="pcell c-com">Petit-déjeuner, relais CCI ou ordre professionnel, besoin publié</div><div class="pcell c-com">Catalogue des besoins par projet</div><div class="pcell c-mec">Mise à disposition de matériel ou d’expertise</div><div class="pcell c-ac">Convention, attestation de valorisation, reçu fiscal</div><div class="pcell c-com">Valorisation dans le cercle, témoignage, passage au don financier</div><div class="pcell ind">J1 si reçu fiscal, valorisation à confirmer</div></div>
+    <div class="prow" data-k="spo"><div class="pcell who"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l14-6v14L3 13z"/><path d="M7 12v6"/></svg></i>Parrain ou sponsor</div><div class="pcell c-com">Annonce d’un temps fort : gala, Giving Day, remise de prix</div><div class="pcell c-com">Offre de partenariat événementiel</div><div class="pcell c-mec">Achat d’une visibilité sur l’événement</div><div class="pcell c-ac">Contrat et facture, circuit UG à organiser</div><div class="pcell c-com">Bilan de visibilité, proposition d’un mécénat</div><div class="pcell ind">Recettes de partenariat, hors défiscalisations</div></div>
+    <div class="prow" data-k="pub"><div class="pcell who"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18M12 3l9 5H3z"/></svg></i>Cofinanceur public</div><div class="pcell c-gov">Appel à projets, convention-cadre, rencontre bilatérale</div><div class="pcell c-mec">Dossier de candidature</div><div class="pcell c-gov">Cofinancement d’un projet</div><div class="pcell c-ac">Convention de financement, reddition de comptes</div><div class="pcell c-com">Reporting, effet de levier valorisé auprès des mécènes</div><div class="pcell ind">Effet de levier, reporting ANR</div></div>
+  </div></div>
+  <div class="plegend"><span class="c-com">Communication</span><span class="c-mec">Mécénat</span><span class="c-ac">Agence comptable de l’UG</span><span class="c-gov">Gouvernance</span></div>
+  <div class="note"><strong>Lecture :</strong> la couleur de chaque étape indique qui agit. La com ouvre et referme presque tous les parcours ; le mécénat tient l’engagement ; l’agence comptable conditionne la formalisation. Les indicateurs J1 et J2 sont ceux du volet mécénat de la convention ADUG.</div>
+</section>
+<section class="view" id="v-politique-dons" data-id="politique-dons" data-group="III. Écosystème" data-n="" data-title="Politique de dons">
+  <p class="where">Partie III · Écosystème</p>
+  <h2 class="h-view">Une politique de dons à définir</h2>
+  <div class="meta-row"><span class="st st-a">Absent</span><span class="own">Porté par : Mécénat, avec l’agence comptable</span></div>
+  <p class="lead">Les sources disent qui donne et à quel niveau, presque jamais comment l’argent arrive ni à quoi il va. B distingue l’abondement pluriannuel des fondateurs et la contribution ponctuelle ou fléchée des mécènes ; A évoque des dons échelonnés ; D un versement unique ou pluriannuel. Aucune règle n’en découle.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Question</th><th>Options possibles</th><th>Ce que ça change pour la com</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Affectation</strong></td><td>Libre, fléchée vers un projet, ou les deux</td><td>Deux appels distincts : soutenir la Fondation ou soutenir un projet ; reporting par projet si le don est fléché</td></tr>
+      <tr><td><strong>Fréquence</strong></td><td>Ponctuel, régulier, pluriannuel sous convention</td><td>Formulaires, remerciements et relances différents ; le don régulier se fidélise autrement</td></tr>
+      <tr><td><strong>Montant</strong></td><td>Petits dons sans convention, dons importants sous convention</td><td>Le seuil de convention marque la fin du parcours en ligne et le début du rendez-vous</td></tr>
+      <tr><td><strong>Canal</strong></td><td>Virement sous convention, paiement en ligne, prélèvement récurrent</td><td>Dépend des outils de dons en ligne ; le prélèvement récurrent est à confirmer avec l’agent comptable</td></tr>
+      <tr><td><strong>Combinaison</strong></td><td>Un même donateur peut-il donner régulièrement à la Fondation et ponctuellement à un projet ?</td><td>Détermine les champs du CRM : affectation, fréquence, forme d’apport</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid g2 block">
+    <div class="note" style="margin-top:0"><strong>Les petits dons ont besoin d’une place.</strong> Les 50 défiscalisations grand public du jalon 1 se jouent là. Sans règle, ces donateurs n’ont ni cercle, ni parcours, ni reconnaissance : d’où un premier anneau dans l’architecture des cercles.</div>
+    <div class="note" style="margin-top:0"><strong>Le don fléché a un coût.</strong> Chaque affectation suppose un suivi comptable et un reporting. Avec 2,5 ETP, la Fondation peut réserver le fléchage aux dons importants.</div>
+  </div>
+
+  <h3 class="block">Le coût du fléchage, en clair</h3>
+  <p class="muted" style="margin-top:8px;max-width:76ch">Flécher un don, c’est s’engager à ce que cet argent serve uniquement au projet choisi. C’est très efficace pour donner envie : un projet concret parle davantage qu’une institution. Mais cet engagement a cinq coûts.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Coût</th><th>En pratique</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Suivi comptable</strong></td><td>Chaque don fléché est enregistré avec son projet, et l’agent comptable doit pouvoir montrer que les dépenses du projet y correspondent. Plus il y a de projets et de petits dons, plus il y a d’écritures à suivre.</td></tr>
+      <tr><td><strong>Reporting</strong></td><td>Le donateur attend des nouvelles de son projet : du contenu à produire projet par projet, donc du temps de communication.</td></tr>
+      <tr><td><strong>Rigidité</strong></td><td>L’argent fléché est bloqué. Il ne couvre ni le fonctionnement ni un besoin urgent. Un surplus ne peut pas partir ailleurs ; un projet sous-financé ne démarre pas et ses donateurs attendent.</td></tr>
+      <tr><td><strong>Frais de collecte</strong></td><td>Collecter coûte : salaires, outils, événements, estimés à 15 à 20 % des montants dans A. Sans annonce préalable, ces frais ne peuvent pas être prélevés sur un don fléché.</td></tr>
+      <tr><td><strong>Confiance</strong></td><td>Utiliser un don fléché pour autre chose, même de bonne foi, peut abîmer la relation avec le donateur et la réputation de la Fondation.</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="block">Les réponses habituelles</h3>
+  <div class="grid g4" style="margin-top:16px">
+    <div class="card"><h4>Un seuil</h4><p class="small muted">Le fléchage est réservé aux dons importants, sous convention. Les petits dons vont au fonds général ou à deux ou trois projets vitrines.</p></div>
+    <div class="card"><h4>Des frais annoncés</h4><p class="small muted">Un pourcentage de frais de gestion figure dans les conditions du don : chacun sait ce qui finance le projet et ce qui finance la collecte.</p></div>
+    <div class="card"><h4>Une clause de réaffectation</h4><p class="small muted">Si le projet est déjà financé ou ne peut pas se réaliser, le don va à un projet proche ; c’est écrit avant le don.</p></div>
+    <div class="card"><h4>Le régulier au fonds général</h4><p class="small muted">Les dons mensuels se prêtent mal au fléchage ; ils financent plutôt le fonctionnement et la continuité.</p></div>
+  </div>
+  <h3 class="block">Ce que ça donne sur le site</h3>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card dark"><p class="tagline">Page « Faire un don »</p><p class="small">Choix par défaut : « là où c’est le plus utile ». Don ponctuel ou régulier, conditions et frais affichés.</p></div>
+    <div class="card dark"><p class="tagline">Pages projets vitrines</p><p class="small">Don fléché sur deux ou trois projets, preuves d’impact, clause de réaffectation visible.</p></div>
+    <div class="card dark"><p class="tagline">Espace entreprises</p><p class="small">Pas de formulaire de paiement : une demande de rendez-vous, puis une convention.</p></div>
+  </div>
+  <div class="note"><strong>Qui décide :</strong> le mécénat et l’agence comptable de l’UG, qui dira ce que le circuit public permet (codes d’affectation, frais de gestion, réaffectation). Pour la com, ces choix déterminent le formulaire de don, les mentions légales du site et les champs du CRM.</div>
+</section>
+
 
 <section class="view" id="v-acteurs" data-id="acteurs" data-group="III. Écosystème" data-n="7" data-title="Cartographie des acteurs">
   <p class="where">Partie III · Écosystème</p>
@@ -677,26 +880,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="note"><strong>La lacune la plus coûteuse : la diaspora guyanaise.</strong> Absente de toutes les sources, c’est pourtant le seul public qui relie l’attachement local et la capacité nationale : des donateurs, et des portes d’entrée vers les grands comptes.</div>
 </section>
 
-<section class="view" id="v-harmonisee" data-id="harmonisee" data-group="III. Écosystème" data-n="" data-title="Cartographie harmonisée">
-  <p class="where">Partie III · Écosystème</p>
-  <h2 class="h-view">Une cartographie harmonisée, exemple opérationnel</h2>
-  <div class="meta-row"><span class="st st-d">Proposition à valider</span><span class="own">Porté par : Communication, arbitrages Mécénat</span></div>
-  <div class="synth" style="margin-top:22px"><span class="flag">Proposition de la communication, hors sources évaluées</span>
-    <p class="small" style="max-width:76ch">Ce que pourrait donner l’existant une fois harmonisé, pour montrer comment la com déploierait le circuit. Les cercles et les porteurs de relation restent à valider par le mécénat ; le calendrier dépend de la confirmation des outils de dons en ligne.</p>
-  </div>
-  <h3 class="block">La règle d’harmonisation : chaque source garde ce qu’elle fait le mieux</h3>
-  <div class="rule">
-    <div class="card"><span class="lt">C</span><b>La proximité fixe l’ordre</b><p class="small muted">On commence par le réseau naturel, puis on élargit.</p></div>
-    <div class="card"><span class="lt">A</span><b>La capacité fixe le cercle</b><p class="small muted">Et le mode de relation : individuel pour les grands dons, collectif pour les petits.</p></div>
-    <div class="card"><span class="lt">D</span><b>La filière fixe le projet</b><p class="small muted">Chaque secteur se voit proposer le projet qui lui parle.</p></div>
-    <div class="card" style="border:2px dashed var(--leaf)"><span class="lt" style="background:var(--leaf);color:var(--side)">+</span><b>La posture fixe le message</b><p class="small muted">Le socle de la stratégie de com choisit le pilier et le ton.</p></div>
-  </div>
-<div class="wave"><div class="wave-h"><h4>Vague 1 : le réseau naturel</h4><span class="own">1er trimestre 2027</span></div><div class="tbl-wrap" style="margin-top:12px"><table class="harm"><thead><tr><th>Sous-ensemble</th><th>Pourquoi à ce moment</th><th>Cercle visé</th><th>Relation</th><th>Projet et pilier</th><th>Support et canal</th></tr></thead><tbody><tr><td>Membres fondateurs</td><td>Déjà engagés : les transformer en ambassadeurs</td><td>Fondateurs</td><td>Individuelle</td><td>Ensemble des projets · Souveraineté</td><td>Capsule « Paroles de fondateurs », dîner du cercle, rapport annuel</td></tr><tr><td>Partenaires CIFRE et conventionnés (CNES, Eiffage, Voltalia, Clarins…)</td><td>Lien existant avec un laboratoire</td><td>Cercle 2 ou 3 <span class="tt">à valider</span></td><td>Individuelle</td><td>Projet lié à leur filière · Innovation</td><td>Fiches projets, rencontre avec les chercheurs</td></tr><tr><td>Groupes familiaux et ETI guyanais</td><td>Décision locale, capacité élevée</td><td>Cercle 2 ou 3 <span class="tt">à valider</span></td><td>Individuelle</td><td>LiLEG, Campus Ouest · Souveraineté</td><td>Plaquette sur mesure, rendez-vous dirigeant</td></tr></tbody></table></div></div><div class="wave"><div class="wave-h"><h4>Vague 2 : la capacité nationale</h4><span class="own">2e et 3e trimestres 2027</span></div><div class="tbl-wrap" style="margin-top:12px"><table class="harm"><thead><tr><th>Sous-ensemble</th><th>Pourquoi à ce moment</th><th>Cercle visé</th><th>Relation</th><th>Projet et pilier</th><th>Support et canal</th></tr></thead><tbody><tr><td>Grands groupes nationaux implantés</td><td>Après les premières références locales</td><td>Cercle 2 <span class="tt">à valider</span></td><td>Individuelle</td><td>Projet par filière (spatial → MARGO, BTP → LiLEG) · Innovation</td><td>Plaquette, teaser vidéo, LinkedIn</td></tr><tr><td>Fondations nationales et thématiques</td><td>Calendriers d’appels à projets</td><td>Cercle 2 ou 3 <span class="tt">à valider</span></td><td>Dossier</td><td>Projets éligibles · Inclusion ou Innovation</td><td>Dossiers de candidature, preuves d’impact</td></tr><tr><td>Diaspora guyanaise</td><td>Pont vers les grands comptes</td><td>Cercle 3 ou 4 <span class="tt">à valider</span></td><td>Individuelle puis collective</td><td>MARGO, Maj’Or · Inclusion</td><td>Rencontres en métropole ou en visio, témoignages d’alumni, LinkedIn</td></tr></tbody></table></div></div><div class="wave"><div class="wave-h"><h4>Vague 3 : le collectif</h4><span class="own">3e et 4e trimestres 2027</span><span class="st st-b">Sous réserve des outils de dons en ligne</span></div><div class="tbl-wrap" style="margin-top:12px"><table class="harm"><thead><tr><th>Sous-ensemble</th><th>Pourquoi à ce moment</th><th>Cercle visé</th><th>Relation</th><th>Projet et pilier</th><th>Support et canal</th></tr></thead><tbody><tr><td>PME, TPE et professions libérales</td><td>Offre collective prête</td><td>Cercle 4 <span class="tt">à valider</span></td><td>Petits groupes</td><td>Lemag’, « Les Voix de l’UG », LiLEG en compétences · Innovation</td><td>Fiche avantages fiscaux et compétences, petits-déjeuners via CCI, CPME et ordres</td></tr><tr><td>Alumni et personnels de l’UG</td><td>Réseau alumni en cours de structuration</td><td>Cercle 4 <span class="tt">à valider</span></td><td>Collective</td><td>MARGO, Maj’Or · Inclusion</td><td>Giving Day, portraits de boursiers</td></tr><tr><td>Grand public</td><td>Après les premières preuves d’impact</td><td>Hors cercle</td><td>Collective</td><td>Projet vitrine · Inclusion</td><td>Réseaux sociaux, Giving Day</td></tr></tbody></table></div></div>
-  <div class="grid g2 block">
-    <div class="card"><p class="tagline">Hors mécénat : le circuit du cofinancement</p><p class="small">CTG et État, ADEME, ANCT, Banque des Territoires, FEDER et Interreg, AFD. Une démarche par dossiers, portée par la gouvernance et le mécénat. La com fournit les preuves d’impact, sans campagne de sollicitation.</p></div>
-    <div class="card"><p class="tagline">En continu : les relais</p><p class="small">CCI, CMA, MEDEF, CPME, ordres, Réseau Entreprendre, Réseau des fondations universitaires, médias locaux, enseignants-chercheurs, comité de soutien. La com les équipe d’un kit relais par vague.</p></div>
-  </div>
-</section>
+
 
 <section class="view" id="v-reseau" data-id="reseau" data-group="III. Écosystème" data-n="8" data-title="Réseau naturel et leviers">
   <p class="where">Partie III · Écosystème</p>
@@ -733,6 +917,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="card mint"><h4>Capacité financière</h4><p class="small muted">Chiffre d’affaires, bénéfice ou fortune. Noté sur 5.</p></div>
   </div>
   <p class="muted block" style="max-width:72ch">Le socle de la stratégie de communication ajoute une lecture de la <strong>posture d’engagement</strong> : fondateur et ancrage, bâtisseur écosystémique, RSE et marque employeur, coup de pouce, solidarité. Une PME à 5 000 € peut être un bâtisseur très actif ; un grand compte à 50 000 € peut rester sur une posture d’image.</p>
+  <div class="note"><strong>Le cadre de la convention :</strong> le jalon 1 impose déjà trois segments, les grands donateurs, les entreprises locales et le grand public. Le débat porte sur l’ordre et le mode de relation, pas sur leur présence.</div>
   <h3 class="block">Trois angles qui se combinent, une seule contradiction</h3>
   <div class="models">
     <div class="card"><div class="tl-head"><h4><span class="lt">A</span>Co-Influence 2025</h4><span class="own">Par capacité</span></div>
@@ -749,7 +934,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
       <div class="lane"><b>1:many</b><span>Grand public et alumni, Giving Day</span></div></div>
   </div>
   
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>La com produirait une plaquette sur mesure et un accompagnement individuel pour les grands comptes nationaux, et une offre collective pour le cercle des PME.</p></div><div class="lc-row"><span class="lt">C</span><p>La com commencerait par le réseau naturel : fiches projets et bilans d’impact pour les partenaires CIFRE et conventionnés, avant toute campagne ouverte.</p></div><div class="lc-row"><span class="lt">D</span><p>La com produirait des supports individuels pour le tissu local, des formats de groupe pour les grands comptes, et un kit Giving Day pour le grand public.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> à qui revient la relation individuelle, et dans quel ordre les cercles sont adressés. Les trois angles se combinent ; seule cette répartition se contredit.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>La com produirait une plaquette sur mesure et un accompagnement individuel pour les grands comptes nationaux, et une offre collective pour le cercle des PME.</p></div><div class="lc-row"><span class="lt">C</span><p>La com commencerait par le réseau naturel : fiches projets et bilans d’impact pour les partenaires CIFRE et conventionnés, avant toute campagne ouverte.</p></div><div class="lc-row"><span class="lt">D</span><p>La com produirait des supports individuels pour le tissu local, des formats de groupe pour les grands comptes, et un kit Giving Day pour le grand public.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> à qui revient la relation individuelle, et dans quel ordre les cercles sont adressés. Les trois angles se combinent ; seule cette répartition se contredit.</div></div>
 </section>
 
 <section class="view" id="v-segments" data-id="segments" data-group="IV. Ciblage et offre" data-n="10" data-title="Fiches segments">
@@ -768,7 +953,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="meta-row"><span class="st st-c">Projets convergents</span><span class="st st-d">Besoins divergents</span><span class="own">Porté par : Mécénat</span></div>
   <p class="lead">Les cinq projets sont stables. Les montants, eux, changent à chaque version : il faut distinguer budget total, part mécénat et part déjà financée.</p>
   <div class="tbl-wrap"><table>
-    <thead><tr><th>Projet</th><th>Discours de cause (mai 2025)</th><th>Dossier fondateurs, part mécénat 2026-2029</th><th>Deck 2026</th><th>Dossier de cadrage ADUG</th></tr></thead>
+    <thead><tr><th>Projet</th><th><span class="lt">A</span>Discours de cause (mai 2025)</th><th><span class="lt">B</span>Dossier fondateurs, part mécénat 2026-2029</th><th><span class="lt">D</span>Deck 2026</th><th>Dossier de cadrage ADUG</th></tr></thead>
     <tbody>
       <tr><td><strong>Lemag’ et podcast « Les Voix de l’UG »</strong></td><td class="num">12 k€/an + 8 k€</td><td class="num">88 k€ (22 k€/an)</td><td class="num">20 200 € + 26 000 €<br><small class="muted">« financements 2027 actés »</small></td><td class="num">30 k€ + 36 k€</td></tr>
       <tr><td><strong>Prix des Maj’Or</strong></td><td class="num">20 k€/an</td><td class="num">80 k€ (20 k€/an)</td><td class="num">91 000 €</td><td class="num">60 k€</td></tr>
@@ -778,7 +963,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     </tbody>
   </table></div>
   
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>Avec de petits montants (Lemag’ 12 k€/an, MARGO 17 k€), la com vendrait des projets à ticket accessible, adaptés au tissu local.</p></div><div class="lc-row"><span class="lt">B</span><p>Avec des parts mécénat sur quatre ans, la com construirait un message d’engagement pluriannuel par projet.</p></div><div class="lc-row"><span class="lt">D</span><p>Si Lemag’, le podcast, Maj’Or et MARGO sont « financés pour 2027 », la com ne les présenterait plus comme projets à soutenir mais comme preuves de ce que la Fondation sait faire ; le LiLEG deviendrait le grand appel.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> pour chaque projet, un statut (à financer ou déjà financé) et un montant affichable. C’est ce statut qui décide si un projet est un produit à proposer ou une vitrine.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>Avec de petits montants (Lemag’ 12 k€/an, MARGO 17 k€), la com vendrait des projets à ticket accessible, adaptés au tissu local.</p></div><div class="lc-row"><span class="lt">B</span><p>Avec des parts mécénat sur quatre ans, la com construirait un message d’engagement pluriannuel par projet.</p></div><div class="lc-row"><span class="lt">D</span><p>Si Lemag’, le podcast, Maj’Or et MARGO sont « financés pour 2027 », la com ne les présenterait plus comme projets à soutenir mais comme preuves de ce que la Fondation sait faire ; le LiLEG deviendrait le grand appel.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> pour chaque projet, un statut (à financer ou déjà financé) et un montant affichable. C’est ce statut qui décide si un projet est un produit à proposer ou une vitrine.</div></div>
 </section>
 
 <section class="view" id="v-offre" data-id="offre" data-group="IV. Ciblage et offre" data-n="12" data-title="Offre et reconnaissance">
@@ -797,7 +982,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
       <tr><td><strong>Discours de cause 2025</strong></td><td>30 k€, 50 k€, 90 k€, 150 k€ et plus</td><td>Grille détaillée « à valider » (visibilité, expertise scientifique, réseau)</td></tr>
       <tr><td><strong>Plan Co-Influence 2025</strong></td><td>150 k€, 100 k€, 75 k€, 50 k€, moins de 30 k€</td><td>Offre « one to one » et « one to few » à créer</td></tr>
       <tr><td><strong>Deck 2026</strong></td><td>Partenaires &lt; 20 k€, Bâtisseurs 20 à 100 k€, Philanthropes &gt; 100 k€</td><td>Non détaillées ; pyramide de 1 500 à 50 000 €</td></tr>
-      <tr><td><strong>Piste communication</strong></td><td>Quatre cercles : fondateurs et trois cercles de mécènes</td><td>Noms à définir, sans référence à l’or ; détail ci-dessous</td></tr>
+      <tr><td><strong>Piste communication</strong></td><td>Cinq cercles : fondateurs, trois cercles de mécènes et un premier anneau pour les petits dons</td><td>Noms à définir, sans référence à l’or ; détail ci-dessous</td></tr>
     </tbody>
   </table></div>
   
@@ -805,14 +990,16 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <p class="muted" style="margin-top:8px;max-width:74ch">Proposition de la communication, issue du cahier des charges du site : plus on se rapproche du centre, plus l’engagement et la reconnaissance sont forts. Chaque cercle réunit des critères d’entrée, des projets ciblés, plusieurs niveaux d’engagement possibles et des contreparties associées. Les noms et les seuils restent à arrêter ensemble. Survolez un cercle.</p>
   <div class="rings">
     <svg viewBox="0 0 340 340" role="group" aria-label="Cercles de mécènes">
-      <circle class="ring" data-r="3" tabindex="0" cx="170" cy="170" r="165" fill="#d9f2ea"/>
-      <circle class="ring" data-r="2" tabindex="0" cx="170" cy="170" r="125" fill="#a5cc78"/>
-      <circle class="ring" data-r="1" tabindex="0" cx="170" cy="170" r="85" fill="#13926e"/>
-      <circle class="ring on" data-r="0" tabindex="0" cx="170" cy="170" r="45" fill="#0f4d3a"/>
+      <circle class="ring" data-r="4" tabindex="0" cx="170" cy="170" r="165" fill="#eef6f2"/>
+      <circle class="ring" data-r="3" tabindex="0" cx="170" cy="170" r="135" fill="#d9f2ea"/>
+      <circle class="ring" data-r="2" tabindex="0" cx="170" cy="170" r="105" fill="#a5cc78"/>
+      <circle class="ring" data-r="1" tabindex="0" cx="170" cy="170" r="75" fill="#13926e"/>
+      <circle class="ring on" data-r="0" tabindex="0" cx="170" cy="170" r="42" fill="#0f4d3a"/>
       <text x="170" y="174" text-anchor="middle" font-size="12" fill="#fff">Fondateurs</text>
-      <text x="170" y="112" text-anchor="middle" font-size="12" fill="#fff">Cercle 2</text>
-      <text x="170" y="70" text-anchor="middle" font-size="12" fill="#0f4d3a">Cercle 3</text>
-      <text x="170" y="30" text-anchor="middle" font-size="12" fill="#0f4d3a">Cercle 4</text>
+      <text x="170" y="114" text-anchor="middle" font-size="12" fill="#fff">Cercle 2</text>
+      <text x="170" y="84" text-anchor="middle" font-size="12" fill="#0f4d3a">Cercle 3</text>
+      <text x="170" y="54" text-anchor="middle" font-size="12" fill="#0f4d3a">Cercle 4</text>
+      <text x="170" y="24" text-anchor="middle" font-size="12" fill="#0f4d3a">Premier anneau</text>
     </svg>
     <div class="ring-detail" id="ring-detail" aria-live="polite"></div>
   </div>
@@ -825,8 +1012,23 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="card"><b>CRM</b><small>Champs cercle et niveau</small></div>
     <div class="card"><b>Reporting</b><small>Rythme par cercle</small></div>
   </div>
+
+  <h3 class="block">Un catalogue des besoins pour le mécénat en nature et de compétences</h3>
+  <p class="muted" style="margin-top:8px;max-width:74ch">« Donnez ce que vous savez faire » : souvent la première marche pour une PME. On ne sollicite que ce qui sert un projet. Exemples à valider avec les porteurs de projets.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Projet</th><th>En nature</th><th>En compétences</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Living Lab LiLEG</strong></td><td>Matériaux, équipements d’essai</td><td>Expertise technique, ingénierie, bureaux d’études</td></tr>
+      <tr><td><strong>Campus pilote de l’Ouest</strong></td><td>Mobilier, équipement numérique</td><td>Assistance à maîtrise d’ouvrage, architecture</td></tr>
+      <tr><td><strong>Bourses MARGO</strong></td><td>Transport, hébergement chez des partenaires</td><td>Accueil en stage, accompagnement interculturel</td></tr>
+      <tr><td><strong>Prix des Maj’Or</strong></td><td>Lots, dotations</td><td>Mentorat, participation aux jurys</td></tr>
+      <tr><td><strong>Lemag’ et « Les Voix de l’UG »</strong></td><td>Impression, studio</td><td>Graphisme, captation, traduction</td></tr>
+      <tr><td><strong>Temps forts</strong></td><td>Traiteur, salles, logistique</td><td>Photo, vidéo, animation</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted small" style="margin-top:10px">Formalisation : convention précisant la nature, la durée et la valorisation de l’apport ; attestation de valorisation par l’entreprise ; reçu fiscal par l’agent comptable, sous réserve de confirmation.</p>
 <div class="note"><strong>Cadre commun à toutes les versions :</strong> la valeur des contreparties reste limitée à 25 % du don. Le cercle des mécènes locaux et les modalités du mécénat en nature et de compétences restent à définir.</div>
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>Avec des paliers de 30 à 150 k€, la com produirait quatre niveaux de reconnaissance haut de gamme, et le tissu local resterait hors des cercles.</p></div><div class="lc-row"><span class="lt">B</span><p>Avec deux statuts, fondateur et mécène, la com bâtirait une page mécènes à deux étages.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec Partenaires, Bâtisseurs et Philanthropes, la com déclinerait trois noms sur le site, le mur des mécènes et les invitations, mais la pyramide démarre à 1 500 €, sous le premier cercle.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> les noms, seuils et contreparties des cercles. La com les met ensuite en forme : identité visuelle de chaque cercle, page hiérarchisée, kit de reconnaissance.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>Avec des paliers de 30 à 150 k€, la com produirait quatre niveaux de reconnaissance haut de gamme, et le tissu local resterait hors des cercles.</p></div><div class="lc-row"><span class="lt">B</span><p>Avec deux statuts, fondateur et mécène, la com bâtirait une page mécènes à deux étages.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec Partenaires, Bâtisseurs et Philanthropes, la com déclinerait trois noms sur le site, le mur des mécènes et les invitations, mais la pyramide démarre à 1 500 €, sous le premier cercle.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> les noms, seuils et contreparties des cercles. La com les met ensuite en forme : identité visuelle de chaque cercle, page hiérarchisée, kit de reconnaissance.</div></div>
 </section>
 
 <!-- ========== PARTIE IV ========== -->
@@ -841,39 +1043,30 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="bar-row"><span>Dossier fondateurs, 2026-2029</span><div class="bar-track"><div class="bar-fill" data-w="63.8"></div></div><span class="bar-val">3 M€</span></div>
     <div class="bar-row"><span>Mai 2026, scénario cible (plancher 1,5 · plafond 3)</span><div class="bar-track"><div class="bar-fill" data-w="46.8"></div></div><span class="bar-val">2,2 M€</span></div>
   </div>
-  <h3 class="block">Objectif 2026 selon les sources</h3>
+  <h3 class="block">Objectif 2026 selon les sources et la convention</h3>
   <div class="bars" data-bars>
     <div class="bar-row"><span>Dossier fondateurs</span><div class="bar-track"><div class="bar-fill" data-w="100"></div></div><span class="bar-val">700 000 €</span></div>
     <div class="bar-row"><span>Co-Influence (première année)</span><div class="bar-track"><div class="bar-fill" data-w="57.1"></div></div><span class="bar-val">400 000 €</span></div>
+    <div class="bar-row"><span>Convention ADUG, année 3</span><div class="bar-track"><div class="bar-fill gold" data-w="34.3"></div></div><span class="bar-val">240 000 €</span></div>
     <div class="bar-row"><span>Deck 2026, mécénat net</span><div class="bar-track"><div class="bar-fill" data-w="19"></div></div><span class="bar-val">133 345 €</span></div>
     <div class="bar-row"><span>Collecté à ce jour</span><div class="bar-track"><div class="bar-fill zero" data-w="1.2"></div></div><span class="bar-val">0 €</span></div>
   </div>
   
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>Avec 3 M€ sur 2026-2030, la com porterait une campagne d’ampleur, avec compteur de collecte et comité de soutien visible.</p></div><div class="lc-row"><span class="lt">B</span><p>Avec 700 000 € dès 2026, la même campagne aurait dû démarrer en mars 2026.</p></div><div class="lc-row"><span class="lt">C</span><p>Avec 2,2 M€ en scénario cible, la com calibrerait une montée progressive, deux rendez-vous par mois en moyenne.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec 133 345 € pour 2026, la com resterait sur une communication de lancement centrée sur les projets à impact immédiat.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> un objectif 2027 unique et ventilé par segment. Tant qu’il n’est pas fixé, la com n’affiche aucun chiffre : un objectif public non tenu coûte plus cher en crédibilité que l’absence d’objectif.</div></div>
+<div class="note"><strong>Le plancher de la convention :</strong> 3 grands donateurs, 5 entreprises locales et 50 défiscalisations grand public sur la phase 1, et 0,24 M€ en année 3, à l’échéance du 31 décembre 2026. Les trajectoires des documents de travail viennent au-dessus.</div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>Avec 3 M€ sur 2026-2030, la com porterait une campagne d’ampleur, avec compteur de collecte et comité de soutien visible.</p></div><div class="lc-row"><span class="lt">B</span><p>Avec 700 000 € dès 2026, la même campagne aurait dû démarrer en mars 2026.</p></div><div class="lc-row"><span class="lt">C</span><p>Avec 2,2 M€ en scénario cible, la com calibrerait une montée progressive, deux rendez-vous par mois en moyenne.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec 133 345 € pour 2026, la com resterait sur une communication de lancement centrée sur les projets à impact immédiat.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> un objectif 2027 unique, bâti sur le plancher de la convention (jalons 1 et 2) puis ventilé par segment. Tant qu’il n’est pas fixé, la com n’affiche aucun chiffre : un objectif public non tenu coûte plus cher en crédibilité que l’absence d’objectif.</div></div>
 </section>
 
-<section class="view" id="v-parcours" data-id="parcours" data-group="V. Objectifs et déploiement" data-n="14" data-title="Parcours donateur">
-  <p class="where">Partie V · Objectifs et déploiement</p>
-  <h2 class="h-view">Le parcours donateur, en quatre temps</h2>
-  <div class="meta-row"><span class="st st-c">Principe convergent</span><span class="st st-a">Déclinaison par segment absente</span><span class="own">Porté par : Mécénat et Communication</span></div>
-  <div class="steps stagger">
-    <div class="card step lift"><span class="k">1</span><h4>Attirer</h4><p class="small muted">LinkedIn, Lemag’, podcast, presse locale, newsletter, afterworks, campagnes fléchées, relais CCI et Réseau Entreprendre.</p><div class="meta-row"><span class="own">Porté par : Communication</span></div></div>
-    <div class="card step lift"><span class="k">2</span><h4>Rencontrer</h4><p class="small muted">Fiche prospect, cultivation, ambassadeur au Bureau, rendez-vous et demande précise, relance sous 10 jours, convention.</p><div class="meta-row"><span class="own">Porté par : Mécénat</span></div></div>
-    <div class="card step lift"><span class="k">3</span><h4>Fidéliser</h4><p class="small muted">5 à 7 contacts par an, reçu et remerciement rapides, reporting d’impact, cercle, mur des donateurs, rapport annuel.</p><div class="meta-row"><span class="own">Porté par : Mécénat et Communication</span></div></div>
-    <div class="card step lift"><span class="k">4</span><h4>Faire essaimer</h4><p class="small muted">Cooptation, témoignages et capsules vidéo, mécène ambassadeur, co-construction de projets.</p><div class="meta-row"><span class="own">Porté par : Mécénat et Communication</span></div></div>
-  </div>
-  <div class="note"><strong>Repère du plan 2025 :</strong> il faut en moyenne quatre premiers rendez-vous pour un donateur. La cadence de rendez-vous dépend donc directement de l’objectif retenu.</div>
-</section>
+
 
 <section class="view" id="v-calendrier" data-id="calendrier" data-group="V. Objectifs et déploiement" data-n="15" data-title="Temps forts et calendrier">
   <p class="where">Partie V · Objectifs et déploiement</p>
   <h2 class="h-view">Temps forts et calendrier 2027</h2>
   <div class="meta-row"><span class="st st-d">À recaler</span><span class="own">Porté par : Mécénat et Communication</span></div>
-  <p class="lead">Les calendriers précédents (lancement en mars 2026, campagne de juillet à septembre, soirée d’octobre) sont dépassés. Le rythme annuel du deck sert de trame. Les périodes en pointillés dépendent de la confirmation des outils de dons en ligne.</p>
+  <p class="lead">La phase 1 de la convention s’achève le 31 décembre 2026 ; son compte rendu est attendu dans les deux mois, et 2027, année 4, conditionne la suite. Les calendriers précédents (lancement en mars 2026, campagne de juillet à septembre, soirée d’octobre) sont dépassés. Le rythme annuel du deck sert de trame. Les périodes en pointillés dépendent de la confirmation des outils de dons en ligne.</p>
   <div class="months" id="months" role="group" aria-label="Périodes de l’année"></div>
   <div class="card month-detail" id="month-detail" aria-live="polite"></div>
   <div class="note"><strong>Ressource existante :</strong> la base « Cartographie des événements » (échelles locale, nationale et internationale) permet d’adosser le calendrier de sollicitation aux temps forts du territoire.</div>
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>Prospection dès janvier 2026, communication interne puis externe au fil de 2026.</p></div><div class="lc-row"><span class="lt">B</span><p>Lancement de la levée de fonds en mars 2026, démarrage des projets en septembre 2026.</p></div><div class="lc-row"><span class="lt">C</span><p>Soirée de lancement fin septembre ou début octobre 2026.</p></div><div class="lc-row"><span class="lt">D</span><p>Campagne de juillet à septembre 2026, soirée de lancement en octobre, Giving Day en décembre.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> une date de lancement public en 2027 et la liste des temps forts confirmés. Sans elles, la com ne peut caler ni calendrier éditorial ni campagne de teasing.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>Prospection dès janvier 2026, communication interne puis externe au fil de 2026.</p></div><div class="lc-row"><span class="lt">B</span><p>Lancement de la levée de fonds en mars 2026, démarrage des projets en septembre 2026.</p></div><div class="lc-row"><span class="lt">C</span><p>Soirée de lancement fin septembre ou début octobre 2026.</p></div><div class="lc-row"><span class="lt">D</span><p>Campagne de juillet à septembre 2026, soirée de lancement en octobre, Giving Day en décembre.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> une date de lancement public en 2027 et la liste des temps forts confirmés. Sans elles, la com ne peut caler ni calendrier éditorial ni campagne de teasing.</div></div>
 </section>
 
 <section class="view" id="v-socle" data-id="socle" data-group="V. Objectifs et déploiement" data-n="" data-title="Le socle de la stratégie de com">
@@ -900,6 +1093,26 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="card mint"><h4>Leviers et freins par segment</h4><p class="small">Pour chaque cible, ce qui déclenche, ce qui bloque et le message aiguillon : la matière des futurs argumentaires.</p></div>
   </div>
 </section>
+<section class="view" id="v-harmonisee" data-id="harmonisee" data-group="V. Objectifs et déploiement" data-n="" data-title="Cartographie harmonisée">
+  <p class="where">Partie V · Objectifs et déploiement</p>
+  <h2 class="h-view">Une cartographie harmonisée, exemple opérationnel</h2>
+  <div class="meta-row"><span class="st st-d">Proposition à valider</span><span class="own">Porté par : Communication, arbitrages Mécénat</span></div>
+  <div class="synth" style="margin-top:22px"><span class="flag">Proposition de la communication, hors sources évaluées</span>
+    <p class="small" style="max-width:76ch">Ce que pourrait donner l’existant une fois harmonisé, pour montrer comment la com déploierait le circuit. Les cercles et les porteurs de relation restent à valider par le mécénat ; le calendrier dépend de deux confirmations distinctes : l’encaissement sous convention pour les grands dons, les outils de dons en ligne pour les petits dons.</p>
+  </div>
+  <h3 class="block">La règle d’harmonisation : chaque source garde ce qu’elle fait le mieux</h3>
+  <div class="rule">
+    <div class="card"><span class="lt">C</span><b>La proximité fixe l’ordre</b><p class="small muted">On commence par le réseau naturel, puis on élargit.</p></div>
+    <div class="card"><span class="lt">A</span><b>La capacité fixe le cercle</b><p class="small muted">Et le mode de relation : individuel pour les grands dons, collectif pour les petits.</p></div>
+    <div class="card"><span class="lt">D</span><b>La filière fixe le projet</b><p class="small muted">Chaque secteur se voit proposer le projet qui lui parle.</p></div>
+    <div class="card" style="border:2px dashed var(--leaf)"><span class="lt" style="background:var(--leaf);color:var(--side)">+</span><b>La posture fixe le message</b><p class="small muted">Le socle de la stratégie de com choisit le pilier et le ton.</p></div>
+  </div>
+<div class="wave"><div class="wave-h"><h4>Vague 1 : le réseau naturel</h4><span class="own">1er trimestre 2027</span><span class="st st-b">Sous réserve de l’encaissement sous convention</span></div><div class="tbl-wrap" style="margin-top:12px"><table class="harm"><thead><tr><th>Sous-ensemble</th><th>Pourquoi à ce moment</th><th>Cercle visé</th><th>Relation</th><th>Projet et pilier</th><th>Support et canal</th></tr></thead><tbody><tr><td>Membres fondateurs</td><td>Déjà engagés : les transformer en ambassadeurs</td><td>Fondateurs</td><td>Individuelle</td><td>Ensemble des projets · Souveraineté</td><td>Capsule « Paroles de fondateurs », dîner du cercle, rapport annuel</td></tr><tr><td>Partenaires CIFRE et conventionnés (CNES, Eiffage, Voltalia, Clarins…)</td><td>Lien existant avec un laboratoire</td><td>Cercle 2 ou 3 <span class="tt">à valider</span></td><td>Individuelle</td><td>Projet lié à leur filière · Innovation</td><td>Fiches projets, rencontre avec les chercheurs</td></tr><tr><td>Groupes familiaux et ETI guyanais</td><td>Décision locale, capacité élevée</td><td>Cercle 2 ou 3 <span class="tt">à valider</span></td><td>Individuelle</td><td>LiLEG, Campus Ouest · Souveraineté</td><td>Plaquette sur mesure, rendez-vous dirigeant</td></tr></tbody></table></div></div><div class="wave"><div class="wave-h"><h4>Vague 2 : la capacité nationale</h4><span class="own">2e et 3e trimestres 2027</span><span class="st st-b">Sous réserve de l’encaissement sous convention</span></div><div class="tbl-wrap" style="margin-top:12px"><table class="harm"><thead><tr><th>Sous-ensemble</th><th>Pourquoi à ce moment</th><th>Cercle visé</th><th>Relation</th><th>Projet et pilier</th><th>Support et canal</th></tr></thead><tbody><tr><td>Grands groupes nationaux implantés</td><td>Après les premières références locales</td><td>Cercle 2 <span class="tt">à valider</span></td><td>Individuelle</td><td>Projet par filière (spatial → MARGO, BTP → LiLEG) · Innovation</td><td>Plaquette, teaser vidéo, LinkedIn</td></tr><tr><td>Fondations nationales et thématiques</td><td>Calendriers d’appels à projets</td><td>Cercle 2 ou 3 <span class="tt">à valider</span></td><td>Dossier</td><td>Projets éligibles · Inclusion ou Innovation</td><td>Dossiers de candidature, preuves d’impact</td></tr><tr><td>Diaspora guyanaise</td><td>Pont vers les grands comptes</td><td>Cercle 3 ou 4 <span class="tt">à valider</span></td><td>Individuelle puis collective</td><td>MARGO, Maj’Or · Inclusion</td><td>Rencontres en métropole ou en visio, témoignages d’alumni, LinkedIn</td></tr></tbody></table></div></div><div class="wave"><div class="wave-h"><h4>Vague 3 : le collectif</h4><span class="own">3e et 4e trimestres 2027</span><span class="st st-b">Sous réserve des outils de dons en ligne</span></div><div class="tbl-wrap" style="margin-top:12px"><table class="harm"><thead><tr><th>Sous-ensemble</th><th>Pourquoi à ce moment</th><th>Cercle visé</th><th>Relation</th><th>Projet et pilier</th><th>Support et canal</th></tr></thead><tbody><tr><td>PME, TPE et professions libérales</td><td>Offre collective prête</td><td>Cercle 4 <span class="tt">à valider</span></td><td>Petits groupes</td><td>Lemag’, « Les Voix de l’UG », LiLEG en compétences · Innovation</td><td>Fiche avantages fiscaux et compétences, petits-déjeuners via CCI, CPME et ordres</td></tr><tr><td>Alumni et personnels de l’UG</td><td>Réseau alumni en cours de structuration</td><td>Cercle 4 <span class="tt">à valider</span></td><td>Collective</td><td>MARGO, Maj’Or · Inclusion</td><td>Giving Day, portraits de boursiers</td></tr><tr><td>Grand public</td><td>Après les premières preuves d’impact</td><td>Hors cercle</td><td>Collective</td><td>Projet vitrine · Inclusion</td><td>Réseaux sociaux, Giving Day</td></tr></tbody></table></div></div>
+  <div class="grid g2 block">
+    <div class="card"><p class="tagline">Hors mécénat : le circuit du cofinancement</p><p class="small">CTG et État, ADEME, ANCT, Banque des Territoires, FEDER et Interreg, AFD. Une démarche par dossiers, portée par la gouvernance et le mécénat. La com fournit les preuves d’impact, sans campagne de sollicitation.</p></div>
+    <div class="card"><p class="tagline">En continu : les relais</p><p class="small">CCI, CMA, MEDEF, CPME, ordres, Réseau Entreprendre, Réseau des fondations universitaires, médias locaux, enseignants-chercheurs, comité de soutien. La com les équipe d’un kit relais par vague.</p></div>
+  </div>
+</section>
 
 <section class="view" id="v-dispositif" data-id="dispositif" data-group="V. Objectifs et déploiement" data-n="16" data-title="Dispositif de communication">
   <p class="where">Partie V · Objectifs et déploiement</p>
@@ -908,14 +1121,14 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="grid g4 block stagger">
     <div class="card lift"><p class="tagline">Rencontrer</p><h4>Supports de rendez-vous</h4><p class="small muted">Discours de cause, fiches projets, plaquette mécénat, programme de reconnaissance.</p></div>
     <div class="card lift"><p class="tagline">Convaincre</p><h4>Vidéo</h4><p class="small muted">Vidéo du potentiel guyanais orientée mécénat ; en 2027, motion design pédagogique déclinable par profil.</p></div>
-    <div class="card lift"><p class="tagline">Rayonner</p><h4>Médias propres</h4><p class="small muted">Lemag’ et « Les Voix de l’UG », atomisés en contenus courts pour LinkedIn et Meta.</p></div>
+    <div class="card lift"><p class="tagline">Rayonner</p><h4>Médias propres</h4><p class="small muted">Lemag’ et « Les Voix de l’UG », atomisés en contenus courts ; volumes fixés par le jalon 3 : 4 magazines et 36 émissions par an.</p></div>
     <div class="card lift"><p class="tagline">Rendre compte</p><h4>Bilan d’impact</h4><p class="small muted">Rapport annuel mécénat, newsletter trimestrielle, valorisation des mécènes.</p></div>
   </div>
   <div class="tbl-wrap"><table>
     <thead><tr><th>Canal</th><th>Cible principale</th><th>Rythme</th><th>Indicateur</th></tr></thead>
     <tbody>
       <tr><td><strong>LinkedIn</strong></td><td>Dirigeants, RSE, RH, institutionnels</td><td>2 à 3 posts par semaine</td><td>Engagement, contacts entrants</td></tr>
-      <tr><td><strong>Newsletter</strong></td><td>Prospects, mécènes, fondateurs</td><td>Trimestrielle</td><td>Ouverture supérieure à 35 %, réponses</td></tr>
+      <tr><td><strong>Newsletter</strong></td><td>Prospects, mécènes, fondateurs</td><td>Trimestrielle (jalon 11 : au moins 3 par an)</td><td>Ouverture supérieure à 35 %, réponses</td></tr>
       <tr><td><strong>Instagram et Facebook</strong></td><td>Grand public, alumni, étudiants</td><td>3 à 4 posts par semaine</td><td>Portée, mobilisation</td></tr>
       <tr><td><strong>Événements</strong></td><td>Grands comptes, fondateurs</td><td>2 à 3 par an</td><td>Conversion après événement</td></tr>
       <tr><td><strong>Site et espace dons</strong></td><td>Tous publics</td><td>Continu</td><td>Visites, dons (sous condition)</td></tr>
@@ -923,6 +1136,77 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   </table></div>
   <div class="note"><strong>Obligation commune :</strong> toute communication liée au projet mentionne le soutien de l’ANR au titre de France 2030 (ANR-22-ASDR-0003) et affiche le logo France 2030.</div>
 </section>
+<section class="view" id="v-digital" data-id="digital" data-group="V. Objectifs et déploiement" data-n="" data-title="Le mécénat dans la stratégie digitale">
+  <p class="where">Partie V · Objectifs et déploiement</p>
+  <h2 class="h-view">Le mécénat dans la stratégie digitale</h2>
+  <div class="meta-row"><span class="st st-d">Proposition à valider</span><span class="own">Porté par : Communication, arbitrages Mécénat</span></div>
+  <p class="lead">Le portail mutualisé FUG et DFPU, cadre recommandé, donne au mécénat une place à chaque entrée. Les petits dons se font en ligne ; les grands dons commencent en ligne et se concluent en rendez-vous. Le back-office commun relie tout et produit les preuves attendues par la convention.</p>
+  <div class="touch">
+    <div class="card" style="--c:var(--green)"><h4>Espace Fondation UG</h4><ul><li>Page « Faire un don », choix par défaut au fonds général</li><li>Pages projets vitrines et preuves d’impact</li><li>Page mécènes hiérarchisée par cercles</li><li>Lemag’ et « Les Voix de l’UG » <span class="jt">3</span></li></ul></div>
+    <div class="card" style="--c:var(--teal)"><h4>Portail entreprises</h4><ul><li>Soutenir : don, compétences, nature</li><li>Catalogue des besoins par projet</li><li>Demande de rendez-vous, puis convention</li><li>Inscription à la newsletter <span class="jt">11</span></li></ul></div>
+    <div class="card" style="--c:var(--leaf)"><h4>Espace Étudiants et alumni</h4><ul><li>Club des Alumni <span class="jt">12</span></li><li>Témoignages de boursiers et lauréats</li><li>Passerelle vers le premier anneau de donateurs</li><li>Giving Day</li></ul></div>
+    <div class="card" style="--c:var(--navy)"><h4>Back-office commun</h4><ul><li>CRM : cercle, niveau, forme d’apport, affectation, fréquence, porteur, étape</li><li>Reçus fiscaux, sous réserve des outils</li><li>Tableau de bord trimestriel <span class="jt">9</span></li><li>Suivi des visites <span class="jt">10</span> et des donateurs <span class="jt">1</span></li></ul></div>
+  </div>
+  <h3 class="block">Un parcours en ligne, deux issues</h3>
+  <div class="flowline">
+    <div class="st2"><b>Découvrir</b>LinkedIn, Instagram, Lemag’, émissions, presse</div>
+    <div class="st2"><b>S’informer</b>Page projet, preuves d’impact, page mécènes</div>
+    <div class="st2 fork"><b>Petit don</b>Formulaire en ligne, ponctuel ou régulier</div>
+    <div class="st2 fork"><b>Grand don</b>Demande de rendez-vous, convention</div>
+    <div class="st2"><b>Être remercié</b>Reçu, remerciement automatique ou signé</div>
+    <div class="st2"><b>Rester lié</b>Newsletter, nouvelles du projet, invitations, renouvellement</div>
+  </div>
+  <div class="grid g3 block">
+    <div class="card mint"><h4>Réseaux sociaux</h4><p class="small">LinkedIn pour les entreprises et les institutionnels ; Instagram et Facebook pour le grand public et les alumni. Chaque contenu long est décliné en formats courts.</p></div>
+    <div class="card mint"><h4>Mesure</h4><p class="small">Visites des pages projets, conversions de la page de don, demandes de rendez-vous, ouvertures de newsletter : les mêmes chiffres nourrissent le reporting ANR.</p></div>
+    <div class="card mint"><h4>Calendrier</h4><p class="small">Livraison du portail en deux ou trois tranches. La page de don n’ouvre qu’une fois la faisabilité des outils confirmée.</p></div>
+  </div>
+  <div class="note"><strong>Ce que le digital attend du mécénat :</strong> la politique de dons (affectation, fréquence, seuil de convention), les noms et paliers des cercles, la liste des projets vitrines et le catalogue des besoins. Sans eux, les pages se construisent mais restent vides.</div>
+</section>
+<section class="view" id="v-cartographie-dons" data-id="cartographie-dons" data-group="V. Objectifs et déploiement" data-n="" data-title="Cartographie des dons">
+  <p class="where">Partie V · Objectifs et déploiement</p>
+  <h2 class="h-view">Cartographie des dons : la conception</h2>
+  <div class="meta-row"><span class="st st-d">Proposition à valider</span><span class="own">Porté par : Mécénat et agence comptable, mise en œuvre Communication</span></div>
+  <p class="lead">Chaque façon de donner, de la porte d’entrée sur le site jusqu’aux champs du CRM. C’est l’outil commun au prestataire du portail, à l’agence comptable et à l’équipe : il rend la politique de dons opérationnelle.</p>
+  <div class="tbl-wrap"><table class="cdtbl">
+    <thead><tr><th>Type de don</th><th>Qui</th><th>Porte d’entrée</th><th>Encaissement</th><th>Formalisation</th><th>Affectation par défaut</th><th>Cercle</th><th>Champs CRM</th></tr></thead>
+    <tbody><tr class="on"><td>Petit don ponctuel</td><td>Particulier, alumni, personnel</td><td>Page « Faire un don »</td><td>Paiement en ligne</td><td>Reçu fiscal <span class="tt">à valider</span></td><td>Fonds général</td><td>Premier anneau</td><td>Fréquence, affectation, canal</td></tr><tr class="on"><td>Don régulier</td><td>Particulier, alumni</td><td>Page « Faire un don »</td><td>Prélèvement récurrent <span class="tt">à valider</span></td><td>Reçu fiscal annuel <span class="tt">à valider</span></td><td>Fonds général</td><td>Premier anneau</td><td>Fréquence, date de renouvellement</td></tr><tr class="on"><td>Don fléché</td><td>Particulier, alumni, TPE</td><td>Page d’un projet vitrine</td><td>Paiement en ligne</td><td>Reçu fiscal <span class="tt">à valider</span>, clause de réaffectation</td><td>Projet choisi</td><td>Premier anneau ou cercle 4</td><td>Projet, affectation</td></tr><tr class="off"><td>Grand don</td><td>Entreprise, fondation, grand donateur</td><td>Espace entreprises : demande de rendez-vous</td><td>Virement sous convention</td><td>Convention, reçu fiscal</td><td>Projet ou fonds général, selon convention</td><td>Cercles 2 et 3</td><td>Cercle, niveau, projet, échéancier, porteur</td></tr><tr class="off"><td>Mécénat de compétences</td><td>Entreprise, profession libérale</td><td>Catalogue des besoins</td><td>Sans flux financier</td><td>Convention, attestation de valorisation, reçu fiscal <span class="tt">à valider</span></td><td>Projet</td><td>Cercle 4 ou selon valorisation</td><td>Forme d’apport, valorisation</td></tr><tr class="off"><td>Mécénat en nature</td><td>Entreprise, PME</td><td>Catalogue des besoins</td><td>Sans flux financier</td><td>Convention, valorisation au coût de revient</td><td>Projet</td><td>Cercle 4 ou selon valorisation</td><td>Forme d’apport, valorisation</td></tr><tr class="off"><td>Parrainage</td><td>Entreprise</td><td>Offre de partenariat d’un temps fort</td><td>Facture via l’UG <span class="tt">à valider</span></td><td>Contrat, facture</td><td>Événement</td><td>Hors cercles</td><td>Événement, contrepartie de visibilité</td></tr></tbody>
+  </table></div>
+  <div class="note"><strong>Lecture :</strong> trois dons passent entièrement en ligne, quatre se concluent hors ligne. Les mentions « à valider » dépendent de la politique de dons et de la confirmation de l’agence comptable et de la DNUM. Les cofinancements publics relèvent d’un circuit de dossiers, hors site.</div>
+</section>
+
+<section class="view" id="v-transparence" data-id="transparence" data-group="V. Objectifs et déploiement" data-n="" data-title="Où vont les dons : la page publique">
+  <p class="where">Partie V · Objectifs et déploiement</p>
+  <h2 class="h-view">Cartographie des dons : la page publique</h2>
+  <div class="meta-row"><span class="st st-d">Fonctionnalité à prévoir</span><span class="own">Porté par : Communication, données Mécénat</span></div>
+  <p class="lead">Une page de transparence qui montre aux donateurs où va l’argent : par projet, par implantation, par cercle. Un levier de confiance et de fidélisation, à inscrire dès maintenant dans le cahier des charges du portail. Maquette indicative, vues ordinateur et mobile.</p>
+  <div class="mock-wrap"><div class="browser"><div class="bbar"><i></i><i></i><i></i><span>fondation.univ-guyane.fr/ou-vont-vos-dons</span></div><div class="mock">
+  <span class="fake">Données fictives</span>
+  <h5>Où vont vos dons</h5><p class="sub">Chaque euro reçu, projet par projet et territoire par territoire.</p>
+  <div class="mk"><div><b>— €</b><small>collectés depuis le lancement</small></div><div><b>—</b><small>donateurs et mécènes</small></div><div><b>5</b><small>projets soutenus</small></div></div>
+  <div class="mgrid"><div class="mbars"><p class="sub" style="margin:0 0 8px;font-weight:700;color:#0f4d3a">Avancement par projet</p><div>Living Lab LiLEG<div class="tr"><span style="width:62%"></span></div></div><div>Bourses MARGO<div class="tr"><span style="width:48%"></span></div></div><div>Prix des Maj’Or<div class="tr"><span style="width:75%"></span></div></div><div>Lemag’ et « Les Voix de l’UG »<div class="tr"><span style="width:90%"></span></div></div><div>Campus pilote de l’Ouest<div class="tr"><span style="width:18%"></span></div></div></div><div class="mmap"><p class="sub" style="margin:0 0 4px;font-weight:700;color:#0f4d3a">Par implantation</p><svg viewBox="0 0 200 220" aria-label="Carte schématique de la Guyane"><polygon points="22,14 66,22 108,36 138,52 158,70 163,108 152,150 132,186 102,208 72,201 46,176 30,140 22,96 17,52" fill="#d9f2ea" stroke="#a5cc78" stroke-width="2"/>
+<g font-family="Montserrat,sans-serif" font-size="9" fill="#0f4d3a" font-weight="700">
+<circle cx="32" cy="30" r="10" fill="#13926e" opacity=".85"/><text x="12" y="52">Saint-Laurent</text>
+<circle cx="96" cy="40" r="7" fill="#13926e" opacity=".85"/><text x="82" y="62">Kourou</text>
+<circle cx="126" cy="52" r="13" fill="#13926e" opacity=".85"/><text x="108" y="80">Cayenne</text>
+<circle cx="157" cy="92" r="5" fill="#13926e" opacity=".85"/><text x="108" y="110">Saint-Georges</text></g></svg></div></div>
+  <div class="mwall"><span class="f">Membres fondateurs</span><span>Cercle 2</span><span>Cercle 3</span><span>Cercle 4</span><span>Premier anneau</span></div>
+  <span class="mcta">Soutenir un projet</span>
+</div></div><div class="phone"><div class="mock">
+  <span class="fake" style="top:8px;right:8px">Fictif</span>
+  <h5>Où vont vos dons</h5><p class="sub">Projet par projet.</p>
+  <div class="mk"><div><b>— €</b><small>collectés</small></div><div><b>—</b><small>donateurs</small></div><div><b>5 projets</b><small>soutenus</small></div></div>
+  <div class="mbars" style="margin-top:12px"><div>Living Lab LiLEG<div class="tr"><span style="width:62%"></span></div></div><div>Bourses MARGO<div class="tr"><span style="width:48%"></span></div></div><div>Prix des Maj’Or<div class="tr"><span style="width:75%"></span></div></div><div>Lemag’ et « Les Voix de l’UG »<div class="tr"><span style="width:90%"></span></div></div><div>Campus pilote de l’Ouest<div class="tr"><span style="width:18%"></span></div></div></div>
+  <span class="mcta" style="display:block;text-align:center">Soutenir un projet</span>
+</div></div></div>
+  <div class="grid g3 block">
+    <div class="card mint"><h4>Ce qu’elle suppose</h4><p class="small">Des dons encaissés, une politique d’affectation fixée et des données à jour dans le CRM.</p></div>
+    <div class="card mint"><h4>Ce qu’il faut prévoir</h4><p class="small">Le consentement des mécènes pour l’affichage de leur nom, les règles RGPD, et la fréquence de mise à jour.</p></div>
+    <div class="card mint"><h4>Ce qu’elle apporte</h4><p class="small">Une preuve publique du jalon 1, un argument pour chaque rendez-vous, et un contenu réutilisable dans le reporting ANR.</p></div>
+  </div>
+</section>
+
+
 
 <!-- ========== PARTIE V ========== -->
 <section class="view" id="v-organisation" data-id="organisation" data-group="VI. Moyens et pilotage" data-n="17" data-title="Organisation et rôles">
@@ -950,7 +1234,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     </div>
   </div>
   <div class="q"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .8-1 1.5M12 16.5v.5" stroke-linecap="round"/></svg><p><strong>À clarifier :</strong> l’attribution du kit de sollicitation (dossier, programme de reconnaissance, plaquette), l’articulation avec la DFPU dans le cadre d’ADUG, et le rôle de la gouvernance dans les rendez-vous de clôture.</p></div>
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>La com met en place la reconnaissance, le reporting, les événements et la fidélisation ; le mécénat identifie, rencontre et conclut.</p></div><div class="lc-row"><span class="lt">D</span><p>Le kit de sollicitation (dossier, programme de reconnaissance, plaquette) est attribué à l’appui mécénat, ce qui le sort du périmètre com.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> qui produit le kit de sollicitation, et qui valide les contenus avant diffusion.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>La com met en place la reconnaissance, le reporting, les événements et la fidélisation ; le mécénat identifie, rencontre et conclut.</p></div><div class="lc-row"><span class="lt">D</span><p>Le kit de sollicitation (dossier, programme de reconnaissance, plaquette) est attribué à l’appui mécénat, ce qui le sort du périmètre com.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> qui produit le kit de sollicitation, et qui valide les contenus avant diffusion.</div></div>
 </section>
 
 <section class="view" id="v-prerequis" data-id="prerequis" data-group="VI. Moyens et pilotage" data-n="18" data-title="Prérequis juridiques et financiers">
@@ -967,7 +1251,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="q"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12l5 5L20 6" stroke-linecap="round"/></svg><p>Quelles règles s’appliquent aux dons : affectation aux projets, reçus fiscaux, dons en nature et en compétences ?</p></div>
   <div class="q"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12l5 5L20 6" stroke-linecap="round"/></svg><p>Le parrainage est-il possible, et quel service de l’UG facture ?</p></div>
   <div class="note"><strong>Socle déjà posé :</strong> grille déontologique en 10 points, indépendance académique garantie, circuit de traitement d’un don en huit étapes. Ces éléments sont convergents et réutilisables tels quels.</div>
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>Le véhicule juridique est présenté comme à créer en 2025 : la com attendrait sa création pour lancer les appels publics.</p></div><div class="lc-row"><span class="lt">D</span><p>La capacité à recevoir des dons est présentée comme acquise : la com pourrait ouvrir une page de don et préparer le Giving Day.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> la confirmation écrite de la faisabilité des outils de dons en ligne. D’ici là, la com s’appuie sur les engagements et promesses de dons, sans appel public à donner en ligne.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>Le véhicule juridique est présenté comme à créer en 2025 : la com attendrait sa création pour lancer les appels publics.</p></div><div class="lc-row"><span class="lt">D</span><p>La capacité à recevoir des dons est présentée comme acquise : la com pourrait ouvrir une page de don et préparer le Giving Day.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> la confirmation écrite de la faisabilité des outils de dons en ligne. D’ici là, la com s’appuie sur les engagements et promesses de dons, sans appel public à donner en ligne.</div></div>
 </section>
 
 <section class="view" id="v-outils" data-id="outils" data-group="VI. Moyens et pilotage" data-n="19" data-title="Outils et données">
@@ -983,7 +1267,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="card mint"><h4>Ce que la segmentation doit produire dans l’outil</h4><p class="small">Typologie, sous-ensemble, échelle, posture, projet d’appétence, palier, porteur de la relation, étape du parcours. Les mêmes champs servent les listes de diffusion et le suivi des échanges.</p></div>
     <div class="card mint"><h4>Conditions</h4><p class="small">Un seul outil de référence, des règles RGPD écrites, une page de don ouverte une fois sa faisabilité confirmée.</p></div>
   </div>
-<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><div class="lc-row"><span class="lt">A</span><p>Avec Eudonet et GiveXpert, la com segmenterait directement dans le CRM et relierait les formulaires de don aux fiches contacts.</p></div><div class="lc-row"><span class="lt">C</span><p>Même outil, présenté comme en cours de déploiement.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec Monday, la com gérerait ses listes de diffusion hors de l’outil de suivi des prospects, avec un risque de doublons.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> un outil de référence et une liste de champs commune au mécénat et à la com.</div></div>
+<div class="lc"><div class="lc-head"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lecture com</div><p class="lc-legend"><span class="lt">A</span>Co-Influence 2025 <span class="lt">B</span>Dossier fondateurs <span class="lt">C</span>Document de mai 2026 <span class="lt">D</span>Deck 2026</p><div class="lc-row"><span class="lt">A</span><p>Avec Eudonet et GiveXpert, la com segmenterait directement dans le CRM et relierait les formulaires de don aux fiches contacts.</p></div><div class="lc-row"><span class="lt">C</span><p>Même outil, présenté comme en cours de déploiement.</p></div><div class="lc-row"><span class="lt">D</span><p>Avec Monday, la com gérerait ses listes de diffusion hors de l’outil de suivi des prospects, avec un risque de doublons.</p></div><div class="lc-foot"><strong>Pour trancher :</strong> un outil de référence et une liste de champs commune au mécénat et à la com.</div></div>
 </section>
 
 <section class="view" id="v-risques" data-id="risques" data-group="VI. Moyens et pilotage" data-n="20" data-title="Risques">
@@ -993,6 +1277,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="tbl-wrap"><table>
     <thead><tr><th>Risque</th><th>Niveau</th><th>Parade</th></tr></thead>
     <tbody>
+      <tr><td><strong>Jalon 1 non atteint en fin de phase 1</strong></td><td><span class="st st-b">Élevé</span></td><td>Documenter dès maintenant engagements et promesses de dons ; présenter dans le compte rendu de phase 1 un plan 2027 crédible</td></tr>
       <tr><td><strong>Faisabilité des dons en ligne à confirmer</strong></td><td><span class="st st-b">Élevé</span></td><td>Obtenir la confirmation écrite avant toute campagne publique ; s’appuyer d’ici là sur les engagements et promesses de dons</td></tr>
       <tr><td><strong>Dépendance au financement ANR</strong></td><td><span class="st st-b">Élevé</span></td><td>Flécher la dotation ANR sur le fonctionnement, conditionner les projets non dotés aux fonds privés</td></tr>
       <tr><td><strong>Capacité d’équipe limitée</strong></td><td><span class="st st-b">Élevé</span></td><td>Deux ou trois actions d’acquisition de front ; appui du Réseau des fondations universitaires</td></tr>
@@ -1016,6 +1301,21 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="card mint"><h4>Chaque trimestre</h4><p class="small">Bilan commun mécénat et communication</p></div>
     <div class="card mint"><h4>Chaque année</h4><p class="small">Revue de la stratégie et reporting au Conseil de gestion</p></div>
   </div>
+  <h3 class="block">Les indicateurs de la convention ADUG, traduits en communication</h3>
+  <p class="muted" style="margin-top:8px;max-width:76ch">Les jalons de la convention avec l’ANR fixent le socle des engagements de la Fondation. Ils se comptent en nombre de donateurs, de publications et de contacts, plus qu’en montants. Chacun appelle une contribution de la communication.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Jalon</th><th>Engagement</th><th>Traduction en communication</th><th>Mesure</th></tr></thead>
+    <tbody>
+      <tr><td><span class="jt">1</span><strong>Campagnes de levée de fonds</strong><br><small class="muted">Volet mécénat</small></td><td>3 grands donateurs, 5 entreprises locales et 50 défiscalisations grand public sur la phase 1, échéance au 31 décembre 2026 ; 0,24 M€ en année 3</td><td>Page de don et formulaires sur le portail mutualisé, kit de prospection par cercle, campagne grand public annuelle, témoignages de donateurs</td><td>Reçus fiscaux émis, conversions de la page de don, rendez-vous issus des supports</td></tr>
+      <tr><td><span class="jt">2</span><strong>Appels à projets des grandes fondations</strong><br><small class="muted">Volet mécénat</small></td><td>Nombre de mécènes et montants collectés par an</td><td>Dossiers et supports de candidature, banque de preuves d’impact (chiffres, photos, témoignages), fiches projets à jour</td><td>Dossiers déposés, dossiers retenus, montants obtenus</td></tr>
+      <tr><td><span class="jt">3</span><strong>Magazine, conférences CCIG, émissions radio</strong><br><small class="muted">Volet mécénat</small></td><td>4 magazines, 9 conférences-débats et 36 émissions radio par an</td><td>Calendrier éditorial de Lemag’ (4 numéros, dont des numéros thématiques issus de l’inventaire), cycle de conférences avec la CCIG pensé comme temps forts de prospection, production audio de trois émissions par mois (« Les Voix de l’UG », studio mutualisé)</td><td>Numéros parus, émissions diffusées, audiences, participants, contacts entreprises recueillis</td></tr>
+      <tr><td><span class="jt">9</span><strong>Suivi du projet et plans de gestion</strong><br><small class="muted">Jalon commun</small></td><td>1 réunion par trimestre</td><td>Tableau de bord trimestriel réunissant indicateurs de collecte et de communication, reporting ANR</td><td>Réunions tenues, tableau de bord diffusé</td></tr>
+      <tr><td><span class="jt">10</span><strong>Visites d’entreprises, interprofessions, chambres consulaires</strong><br><small class="muted">Jalon commun</small></td><td>Nombre d’entreprises visitées</td><td>Supports de rendez-vous, base de contacts partagée, suivi de chaque visite dans le CRM</td><td>Visites tracées, suites données</td></tr>
+      <tr><td><span class="jt">11</span><strong>Newsletter aux entreprises</strong><br><small class="muted">Jalon commun</small></td><td>3 newsletters par an</td><td>Newsletter commune FUG et DFPU, nourrie par Lemag’, les émissions et les actualités des projets</td><td>Numéros envoyés, taux d’ouverture supérieur à 35 %, réponses</td></tr>
+      <tr><td><span class="jt">12</span><strong>Club des Alumni</strong><br><small class="muted">Jalon commun, numérotation à vérifier</small></td><td>+10 % d’adhérents par an</td><td>Espace alumni du portail, campagnes d’adhésion, témoignages, passerelle vers le premier anneau de donateurs</td><td>Adhésions, progression annuelle</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><strong>Le portail web mutualisé FUG et DFPU, cadre recommandé,</strong> sert directement plusieurs de ces jalons : page de don (jalon 1), base de contacts et CRM partagés (jalons 9 et 10), diffusion de Lemag’ et des émissions (jalon 3), inscriptions à la newsletter (jalon 11).</div>
 </section>
 
 <!-- ========== ANNEXES ========== -->
@@ -1033,10 +1333,11 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   <h2 class="h-view">Prochaines étapes</h2>
   <div class="steps stagger" style="grid-template-columns:repeat(4,minmax(0,1fr))">
     <div class="card step lift"><span class="k">1</span><h4>Valider la structure</h4><p class="small muted">Accord sur le plan, les quatre statuts et le partage des rôles.</p></div>
-    <div class="card step lift"><span class="k">2</span><h4>Confirmer les prérequis</h4><p class="small muted">Encaissement et reçus fiscaux, objectif 2027, logique de ciblage.</p></div>
+    <div class="card step lift"><span class="k">2</span><h4>Confirmer les prérequis</h4><p class="small muted">Encaissement sous convention, outils de dons en ligne, objectif 2027 bâti sur le plancher des jalons.</p></div>
     <div class="card step lift"><span class="k">3</span><h4>Renseigner les fiches</h4><p class="small muted">Les dix informations pour chaque cible retenue.</p></div>
     <div class="card step lift"><span class="k">4</span><h4>Déployer</h4><p class="small muted">Supports, calendrier éditorial et CRM alignés sur les décisions.</p></div>
   </div>
+  <div class="note"><strong>Repère :</strong> le jalon 1 se mesure au 31 décembre 2026, et le compte rendu de fin de phase 1 est attendu début 2027. Les engagements et promesses obtenus d’ici là méritent d’être documentés.</div>
   <div class="grid g2 block">
     <div class="card"><p class="tagline">Développement mécénat</p><h4>Stratégie, prospection, relation mécènes</h4><p class="small muted">Arbitrages des parties III et IV</p></div>
     <div class="card"><p class="tagline">Marketing et communication</p><h4>Supports, canaux et calendrier</h4><p class="small muted">Déploiement dès les arbitrages rendus</p></div>
@@ -1064,11 +1365,11 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 (function(){
   /* ---------- Data ---------- */
   var SOUTIENS=[
-    {t:"Donateur",who:"Particulier",logic:"Un don par adhésion à la cause.",ico:'<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',cadre:"Réduction d’impôt sur le revenu de 66 %, reçu fiscal",contre:"Symbolique",promesse:"Sens, appartenance, preuve d’impact"},
-    {t:"Mécène",who:"Entreprise ou fondation",logic:"Un soutien d’intérêt général, sans contrepartie équivalente.",ico:'<path d="M3 21h18M6 21V8l6-4 6 4v13M10 12h4M10 16h4"/>',cadre:"Réduction d’impôt de 60 %, dans la limite de 0,5 % du CA ou 20 000 €",contre:"Plafonnées à 25 % du don",promesse:"Image RSE, ancrage territorial, réseau"},
-    {t:"Sponsor ou parrain",who:"Entreprise",logic:"Une opération commerciale de visibilité.",ico:'<path d="M3 11l14-6v14L3 13z"/><path d="M7 12v6"/>',cadre:"Facture et TVA, charge déductible, pas de réduction d’impôt",contre:"Équivalentes au montant versé",promesse:"Visibilité publicitaire mesurable"},
-    {t:"Cofinanceur public",who:"État, collectivités, agences, Union européenne",logic:"Une subvention, un appel à projets, une convention.",ico:'<path d="M4 10h16M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18M12 3l9 5H3z"/>',cadre:"Dossier, conventionnement, reddition de comptes",contre:"Alignement sur une politique publique",promesse:"Effet de levier, cohérence avec les priorités du territoire"},
-    {t:"Nature ou compétences",who:"Entreprise, PME, profession libérale",logic:"Une mise à disposition de matériel ou d’expertise.",ico:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/>',cadre:"Valorisé comme du mécénat, au coût de revient",contre:"Plafonnées à 25 %",promesse:"Expertise reconnue, lien avec les étudiants, première marche pour les PME"}
+    {t:"Donateur",who:"Particulier",logic:"Un don par adhésion à la cause, ponctuel ou régulier.",ico:'<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',cadre:"Réduction d’impôt sur le revenu (66 %, 75 % au titre de l’IFI), reçu fiscal",contre:"Symbolique",promesse:"Sens, appartenance, preuve d’impact",pv:"p",pl:"Partiel : B, D"},
+    {t:"Mécène",who:"Entreprise ou fondation",logic:"Un soutien d’intérêt général, sans contrepartie équivalente.",ico:'<path d="M3 21h18M6 21V8l6-4 6 4v13M10 12h4M10 16h4"/>',cadre:"Réduction d’impôt de 60 %, dans la limite de 0,5 % du chiffre d’affaires",contre:"Plafonnées à 25 % du don",promesse:"Image RSE, ancrage territorial, réseau",pv:"s",pl:"Issu des sources : A, B, C, D"},
+    {t:"Nature ou compétences",who:"Entreprise, PME, profession libérale",logic:"Une mise à disposition de matériel ou d’expertise.",ico:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/>',cadre:"Valorisé comme du mécénat, au coût de revient",contre:"Plafonnées à 25 %",promesse:"Expertise reconnue, lien avec les étudiants, première marche pour les PME",pv:"s",pl:"Issu des sources : A, C, D"},
+    {t:"Parrain ou sponsor",who:"Entreprise",logic:"Un partenariat de visibilité qui complète le mécénat.",ico:'<path d="M3 11l14-6v14L3 13z"/><path d="M7 12v6"/>',cadre:"Contrat et facture ; charge déductible pour l’entreprise",contre:"Une visibilité proportionnée au montant",promesse:"Une présence mesurable sur les temps forts : gala, Giving Day, remises de prix",pv:"a",pl:"Ajout : cadre légal"},
+    {t:"Cofinanceur public",who:"État, collectivités, agences, Union européenne",logic:"Une subvention, un appel à projets, une convention.",ico:'<path d="M4 10h16M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18M12 3l9 5H3z"/>',cadre:"Dossier, conventionnement, reddition de comptes",contre:"Alignement sur une politique publique",promesse:"Effet de levier, cohérence avec les priorités du territoire",pv:"a",pl:"Ajout : clarification (éléments dans B, D)"}
   ];
   var ACTEURS=[
     {t:"Entreprises",role:"Financer",items:[
@@ -1108,10 +1409,10 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   var COLS=["Priorité","Motivations et freins","Projets","Palier","Contreparties","Message et preuves","Parcours","Porteur","Canal","Échéance"];
   var SEGS=[
     {t:"Membres fondateurs",s:"c a d c c a a c a a".split(" "),acq:["Dotation engagée sur quatre ans","Programme de reconnaissance en trois volets","Siège au Conseil de gestion"],tr:["Rôle d’ambassadeurs et d’abondement (Giving Day)","Calendrier de fidélisation 2027","Écart 160 000 € / 184 000 € à documenter"],com:["Capsule « Paroles de fondateurs »","Mentions site, publications, campagnes","Reconnaissance lors des temps forts"]},
-    {t:"Grands comptes nationaux et filiales",s:"d c d d a d c c c a".split(" "),acq:["Profil type : capacité ≥ 50 k€, besoin RSE et marque employeur","Prospects : CNES en priorité, grands groupes implantés","Leviers et freins décrits"],tr:["Relation individuelle ou par petits groupes","Palier d’entrée et contreparties","Qui mène les rendez-vous"],com:["Plaquette mécénat et fiches projets","Teaser vidéo et discours de cause","Bilan d’impact, interviews croisées dans Lemag’"]},
-    {t:"Fondations et institutionnels",s:"a c d a a a a a a a".split(" "),acq:["Fondations thématiques identifiées comme cible secondaire en 2025","Critères de qualification décrits"],tr:["Séparer fondations (mécènes) et cofinanceurs publics","Projets éligibles par fondation","Qui instruit les dossiers"],com:["Notes de cadrage et dossiers","Preuves d’impact chiffrées","Peu de communication grand public"]},
-    {t:"PME et ETI locales",s:"d c d d a c a a c a".split(" "),acq:["Consensus sur un cercle collectif","Leviers : fierté, réseau, simplicité","Message : « vos dons agissent ici »"],tr:["Palier : 1 à 5 k€/an ou ≥ 30 k€","Nom, contreparties, présidence du cercle","Place du mécénat de compétences"],com:["Offre collective lisible","Fiche avantages fiscaux et compétences","Petits-déjeuners, relais CCI, MEDEF, CPME"]},
-    {t:"Alumni et particuliers",s:"b c d a a c a a c b".split(" "),acq:["Leviers : solidarité, appartenance, abondement","Réseau alumni amorcé à l’UG (association en 2027)"],tr:["Inclure ou non cette cible en 2027","Faisabilité des reçus fiscaux via les outils de dons en ligne, à confirmer","Giving Day : oui ou non"],com:["Kit Giving Day, portraits de boursiers","Stories et carrousels","Une fois la faisabilité des dons en ligne confirmée"]},
+    {t:"Grands comptes nationaux et filiales",s:"d c d d a d c c c a".split(" "),acq:["Jalon 1 : 3 grands donateurs d’ici fin 2026","Profil type : capacité ≥ 50 k€, besoin RSE et marque employeur","Prospects : CNES en priorité, grands groupes implantés","Leviers et freins décrits"],tr:["Relation individuelle ou par petits groupes","Palier d’entrée et contreparties","Qui mène les rendez-vous"],com:["Plaquette mécénat et fiches projets","Teaser vidéo et discours de cause","Bilan d’impact, interviews croisées dans Lemag’"]},
+    {t:"Fondations et institutionnels",s:"c c d a a a a a a a".split(" "),acq:["Jalon 2 : réponses aux appels à projets des grandes fondations, suivies chaque année","Fondations thématiques identifiées comme cible secondaire en 2025","Critères de qualification décrits"],tr:["Séparer fondations (mécènes) et cofinanceurs publics","Projets éligibles par fondation","Qui instruit les dossiers"],com:["Notes de cadrage et dossiers","Preuves d’impact chiffrées","Peu de communication grand public"]},
+    {t:"PME et ETI locales",s:"d c d d a c a a c a".split(" "),acq:["Jalon 1 : 5 entreprises locales d’ici fin 2026","Consensus sur un cercle collectif","Leviers : fierté, réseau, simplicité","Message : « vos dons agissent ici »"],tr:["Palier : 1 à 5 k€/an ou ≥ 30 k€","Nom, contreparties, présidence du cercle","Place du mécénat de compétences"],com:["Offre collective lisible","Fiche avantages fiscaux et compétences","Petits-déjeuners, relais CCI, MEDEF, CPME"]},
+    {t:"Alumni et particuliers",s:"c c d a a c a a c b".split(" "),acq:["Jalon 1 : 50 défiscalisations grand public d’ici fin 2026","Jalon commun : Club des Alumni, +10 % par an","Leviers : solidarité, appartenance, abondement","Réseau alumni amorcé à l’UG (association en 2027)"],tr:["Modalités et calendrier : la collecte participative est prévue par la convention ADUG","Faisabilité des reçus fiscaux via les outils de dons en ligne, à confirmer","Giving Day : oui ou non"],com:["Kit Giving Day, portraits de boursiers","Stories et carrousels","Une fois la faisabilité des dons en ligne confirmée"]},
     {t:"Communauté interne",s:"a c a a a c a a a a".split(" "),acq:["Culture mécénat recommandée en 2025","Leviers et freins des enseignants-chercheurs décrits"],tr:["Place dans la stratégie 2027","Formation au mécénat des équipes"],com:["Acculturation interne","Relais des chercheurs dans les médias propres"]}
   ];
   var MONTHS=[
@@ -1125,19 +1426,21 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     {m:"Décembre",s:"Giving Day",d:"Giving Day amazonien, dîner du cercle, remerciements.",c:true}
   ];
   var REG=[
-    ["Garantie de faisabilité de l’encaissement et des reçus fiscaux","À confirmer pour les outils de dons en ligne prochainement mis en place","Administration de l’UG, agence comptable, DNUM","Conditionne page de don, Giving Day, cible particuliers","b"],
-    ["Objectif de collecte 2027 et trajectoire 2030","3 M€ (2025) ; 1,5 / 2,2 / 3 M€ (mai 2026) ; 133 345 € pour 2026 (deck)","Mécénat, Conseil de gestion","Un seul chiffre affichable, pyramide, cadence d’actions","b"],
-    ["Logique de ciblage","Par capacité (2025), par proximité (mai 2026), par mode de relation (deck)","Mécénat","Supports sur mesure ou offre collective","b"],
-    ["Segments prioritaires 2027","Grands comptes, réseau naturel, tissu local","Mécénat","Ordre de production des fiches et supports","d"],
-    ["Architecture des cercles et paliers","30-150 k€ ; 50-150 k€ ; < 20 k€ / 20-100 k€ / > 100 k€ ; quatre cercles","Mécénat, mise en forme communication","Noms, page mécènes, programme de reconnaissance","d"],
-    ["Contreparties des mécènes non fondateurs","Grille 2025 « à valider »","Mécénat","Plaquette, conventions, événements","a"],
-    ["Montant de référence par projet","Quatre jeux de chiffres par projet","Mécénat, porteurs de projets","Fiches projets et site","d"],
-    ["Cible particuliers et alumni en 2027","Non retenue (2025) ; Giving Day (deck)","Conjoint, sous réserve du point 1","Kit Giving Day, réseaux sociaux","d"],
-    ["Parrainage accepté et circuit de facturation","Non traité","Gouvernance, agence comptable","Offres partenaires pour les événements","a"],
-    ["CRM de référence","Eudonet et GiveXpert ; Monday ; CRM mutualisé ADUG","Conjoint, avec ADUG","Segmentation, listes de diffusion, suivi","d"],
-    ["Comité de soutien et cercle local","Proposés en 2025, sans suite documentée","Mécénat, gouvernance","Événements, communication collective","a"],
-    ["Porteur de la relation et calendrier par segment","Non traité","Mécénat","Calendrier éditorial et événementiel","a"],
-    ["Cadre de référence : 4 axes ou 5 priorités","4 axes (2025) ; 5 priorités (deck)","Gouvernance","Architecture du site et des supports","d"]
+    ["Encaissement des grands dons sous convention","Circuit par l’agent comptable décrit dans D, à confirmer","Administration de l’UG, agence comptable","Conditionne les vagues 1 et 2 : fondateurs, grands comptes, fondations, ETI","b","prerequis"],
+    ["Outils de dons en ligne et reçus fiscaux","À confirmer pour les outils prochainement mis en place ; financement participatif : circuit de reversement à vérifier","Administration de l’UG, agence comptable, DNUM","Conditionne la vague 3, le Giving Day, la page de don","b","prerequis"],
+    ["Objectif 2027 et trajectoire 2030","Plancher de la convention : jalon 1 et 0,24 M€ en année 3 ; au-dessus : 3 M€ (A, B), 1,5 à 3 M€ (C), 133 345 € pour 2026 (D)","Mécénat, Conseil de gestion","Un seul chiffre affichable, pyramide, cadence d’actions","b","objectifs"],
+    ["Répartition de la relation individuelle","Grands comptes nationaux (A) ou tissu local (D) ; les trois segments du jalon 1 sont imposés","Mécénat","Supports sur mesure ou offre collective","d","segmentation"],
+    ["Ordre de priorité des segments en 2027","Réseau naturel (C), grands comptes (A), tissu local (D)","Mécénat","Ordre de production des fiches et supports","d","harmonisee"],
+    ["Architecture des cercles et paliers","30-150 k€ ; 50-150 k€ ; < 20 k€ / 20-100 k€ / > 100 k€ ; cinq cercles proposés","Mécénat, mise en forme communication","Noms, page mécènes, programme de reconnaissance","d","offre"],
+    ["Contreparties des mécènes non fondateurs","Grille 2025 « à valider »","Mécénat","Plaquette, conventions, événements","a","offre"],
+    ["Politique de dons","Évoquée dans B et D, sans règle : affectation, fréquence, combinaisons","Mécénat, agence comptable","Formulaires, appels, remerciements, champs CRM","a","politique-dons"],
+    ["Montant de référence par projet","Quatre jeux de chiffres par projet","Mécénat, porteurs de projets","Fiches projets et site","d","projets"],
+    ["Modalités et calendrier de la collecte grand public et alumni","Imposée par le jalon 1 (50 défiscalisations) ; écartée par A, Giving Day dans D ; plateforme participative prévue par la convention","Conjoint, sous réserve du point 2","Kit Giving Day, réseaux sociaux","d","segments"],
+    ["Parrainage accepté et circuit de facturation","Non traité","Gouvernance, agence comptable","Offres partenaires pour les événements","a","soutiens"],
+    ["CRM de référence","Eudonet et GiveXpert ; Monday ; CRM mutualisé ADUG","Conjoint, avec ADUG","Segmentation, listes de diffusion, suivi","d","outils"],
+    ["Comité de soutien et cercle local","Proposés en 2025, sans suite documentée","Mécénat, gouvernance","Événements, communication collective","a","reseau"],
+    ["Porteur de la relation et calendrier par segment","Non traité","Mécénat","Calendrier éditorial et événementiel","a","calendrier"],
+    ["Cadre de référence : 4 axes ou 5 priorités","4 axes (2025) ; 5 priorités (deck)","Gouvernance","Architecture du site et des supports","d","cause"]
   ];
   var GLOSS=[
     ["Donateur","Personne physique qui soutient la Fondation par un don. Elle bénéficie d’une réduction d’impôt sur le revenu et reçoit un reçu fiscal."],
@@ -1149,6 +1452,8 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     ["Réseau naturel","Ensemble des acteurs déjà liés à l’UG : partenaires, conventions, fondateurs, alumni. Premier gisement de mécènes."],
     ["One to one, few, many","Modes de relation : individuel pour les grands dons, par petits groupes homogènes, collectif pour le grand public."],
     ["Pyramide des dons","Répartition prévisionnelle des dons par palier, avec le nombre de donateurs et de prospects à rencontrer pour chacun."],
+    ["Jalon","Engagement chiffré de la convention ADUG, mesuré à une échéance donnée. Le volet Mécénat en compte trois, et quatre sont communs avec la DFPU."],
+    ["Phase 1, phase 2","Phase 1 : années 1 à 3 du projet ADUG (2024-2026). Phase 2 : années 4 à 10, conditionnées par l’évaluation de la phase 1."],
     ["Reçu fiscal","Document Cerfa permettant au donateur ou au mécène de bénéficier de la réduction d’impôt. Son émission suppose l’encaissement effectif."]
   ];
   var ST={c:["Convergent","st-c"],d:["Divergent","st-d"],a:["Absent","st-a"],b:["À confirmer","st-b"]};
@@ -1156,12 +1461,12 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   /* ---------- Render data blocks ---------- */
   var sg=document.getElementById("soutiens-grid");
   SOUTIENS.forEach(function(x){
-    sg.insertAdjacentHTML("beforeend",'<button class="flip" aria-pressed="false"><div class="flip-in"><div class="face front"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+x.ico+'</svg></div><h4>'+x.t+'</h4><p class="who">'+x.who+'</p><p class="logic">'+x.logic+'</p><span class="flip-hint">Cadre et promesse ↻</span></div><div class="face back"><dl><dt>Cadre</dt><dd>'+x.cadre+'</dd><dt>Contreparties</dt><dd>'+x.contre+'</dd><dt>Ce que la communication promet</dt><dd>'+x.promesse+'</dd></dl></div></div></button>');
+    sg.insertAdjacentHTML("beforeend",'<button class="flip" aria-pressed="false"><div class="flip-in"><div class="face front"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+x.ico+'</svg></div><h4>'+x.t+'</h4><p class="who">'+x.who+'</p><p class="logic">'+x.logic+'</p><span class="prov '+x.pv+'">'+x.pl+'</span><span class="flip-hint">Cadre et promesse ↻</span></div><div class="face back"><dl><dt>Cadre</dt><dd>'+x.cadre+'</dd><dt>Contreparties</dt><dd>'+x.contre+'</dd><dt>Ce que la communication promet</dt><dd>'+x.promesse+'</dd></dl></div></div></button>');
   });
   var ag=document.getElementById("acteurs-grid");
   var AST={c:["Identifié","st-c"],d:["Divergent","st-d"],p:["Partiel","st-d"],a:["Absent","st-a"],x:["À étudier","st-a"]},AFLAT=[];
   ACTEURS.forEach(function(e){
-    var chips=e.items.map(function(i){var k=AFLAT.length;AFLAT.push(i);return '<button class="chip actor s-'+i[3]+'" data-sc="'+i[1]+'" data-st="'+i[3]+'" data-k="'+k+'">'+i[0]+'<span class="srcs">'+(i[2]?i[2].split("").join(" "):"—")+'</span></button>';}).join("");
+    var chips=e.items.map(function(i){var k=AFLAT.length;AFLAT.push(i);return '<button class="chip actor s-'+i[3]+'" data-sc="'+i[1]+'" data-st="'+i[3]+'" data-k="'+k+'">'+i[0]+'<span class="srcs" title="'+(i[2]?"Sources : "+i[2].split("").join(", "):"Absent des sources")+'">'+(i[2]?i[2].split("").join(" "):"—")+'</span></button>';}).join("");
     ag.insertAdjacentHTML("beforeend",'<div class="card lift ens"><div class="ens-head"><h4>'+e.t+'</h4><span class="role'+(e.pre?' pre':'')+'">'+e.role+'</span></div><div class="chips">'+chips+'</div></div>');
   });
   var mx=document.getElementById("matrix");
@@ -1192,7 +1497,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   showMonth(0);
 
   var rb=document.getElementById("reg-body");
-  REG.forEach(function(r,i){rb.insertAdjacentHTML("beforeend",'<tr data-s="'+r[4]+'"><td>'+(i+1)+'</td><td><strong>'+r[0]+'</strong></td><td class="small">'+r[1]+'</td><td class="small">'+r[2]+'</td><td class="small">'+r[3]+'</td><td><span class="st '+ST[r[4]][1]+'">'+ST[r[4]][0]+'</span></td></tr>');});
+  REG.forEach(function(r,i){rb.insertAdjacentHTML("beforeend",'<tr data-s="'+r[4]+'"><td>'+(i+1)+'</td><td><strong>'+r[0]+'</strong><br><a class="reglink" href="#'+r[5]+'">Voir la section</a></td><td class="small">'+r[1]+'</td><td class="small">'+r[2]+'</td><td class="small">'+r[3]+'</td><td><span class="st '+ST[r[4]][1]+'">'+ST[r[4]][0]+'</span></td></tr>');});
   document.getElementById("reg-filters").addEventListener("click",function(e){
     var b=e.target.closest(".chip-btn");if(!b)return;
     this.querySelectorAll(".chip-btn").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false");});
@@ -1276,7 +1581,8 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     {n:"Membres fondateurs",nom:"Nommé",cr:"Dotation pluriannuelle, siège au Conseil de gestion",pr:"Ensemble des projets, orientation stratégique",lv:"Fondateur ; à terme, fondateur ambassadeur (abondement, comité de soutien)",ct:"Programme de reconnaissance des fondateurs, déjà défini",crm:"Cercle : fondateur ; niveau ; rôle de gouvernance"},
     {n:"Cercle 2",nom:"À nommer",cr:"Engagement pluriannuel de montant élevé ; seuil à fixer (les sources vont de 50 à 150 k€)",pr:"Projets structurants : LiLEG, Campus pilote de l’Ouest",lv:"Soutien annuel, engagement pluriannuel, nom associé à un programme",ct:"Nom associé à un projet, communiqué dédié, rencontres chercheurs, gala",crm:"Cercle 2 ; niveau ; projet fléché ; échéancier"},
     {n:"Cercle 3",nom:"À nommer",cr:"Soutien annuel intermédiaire ; seuil à fixer (les sources vont de 20 à 50 k€)",pr:"Talents : Bourses MARGO, Prix des Maj’Or",lv:"Don ponctuel, don annuel renouvelé, parrainage d’un lauréat",ct:"Mur des mécènes, newsletter, invitations aux remises de prix",crm:"Cercle 3 ; niveau ; projet ; date de renouvellement"},
-    {n:"Cercle 4",nom:"À nommer",cr:"Cercle collectif de proximité : PME, compétences, nature ; seuil à fixer (1 à 5 k€/an évoqués)",pr:"Lemag’, « Les Voix de l’UG », LiLEG en compétences",lv:"Petit don, mécénat de compétences, mécénat en nature",ct:"Mention sur le site, rencontres du cercle, visibilité collective",crm:"Cercle 4 ; forme d’apport ; filière ; niveau"}
+    {n:"Cercle 4",nom:"À nommer",cr:"Cercle collectif de proximité : PME, compétences, nature ; seuil à fixer (1 à 5 k€/an évoqués)",pr:"Lemag’, « Les Voix de l’UG », LiLEG en compétences",lv:"Petit don, mécénat de compétences, mécénat en nature",ct:"Mention sur le site, rencontres du cercle, visibilité collective",crm:"Cercle 4 ; forme d’apport ; filière ; niveau"},
+    {n:"Premier anneau",nom:"À nommer",cr:"Petits dons de particuliers, alumni et personnels, ponctuels ou réguliers ; c’est là que se jouent les 50 défiscalisations du jalon 1",pr:"Projets vitrines : MARGO, Maj’Or, Lemag’",lv:"Don ponctuel, don régulier, participation au Giving Day",ct:"Remerciement, nouvelles du projet soutenu, invitation aux temps forts",crm:"Premier anneau ; fréquence ; affectation ; canal"}
   ];
   var rd=document.getElementById("ring-detail"),rsvg=document.querySelector(".rings svg");
   function showR(i){
@@ -1290,6 +1596,24 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
     c.addEventListener("click",function(){showR(c.dataset.r);});
   });
   showR(0);
+
+
+  document.getElementById("pfilters").addEventListener("click",function(e){
+    var b=e.target.closest(".chip-btn");if(!b)return;
+    this.querySelectorAll(".chip-btn").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false");});
+    document.querySelectorAll("#pgrid .prow").forEach(function(r){r.classList.toggle("hide",b.dataset.k!=="all"&&r.dataset.k!==b.dataset.k);});
+  });
+
+
+  var SRC={A:"A · Co-Influence : discours de cause (mai 2025) et plan d’actions fundraising (juillet 2025)",B:"B · Dossier Cercle des membres fondateurs et programme de reconnaissance (octobre 2025)",C:"C · Stratégie de levée de fonds et plan d’actions mécénat 2026-2030 (mai 2026)",D:"D · Stratégie de fundraising pour les mécènes (2026)"};
+  var tip=document.getElementById("tip"),tipT=null;
+  function srcOf(el){var l=el&&el.classList&&el.classList.contains("lt")?el.textContent.trim():"";return SRC[l]?l:null;}
+  function showTip(el){var l=srcOf(el);if(!l)return;tip.textContent=SRC[l];var r=el.getBoundingClientRect();tip.classList.add("on");var w=tip.offsetWidth,x=Math.min(Math.max(8,r.left+r.width/2-w/2),window.innerWidth-w-8),y=r.top-tip.offsetHeight-8;if(y<8)y=r.bottom+8;tip.style.left=x+"px";tip.style.top=y+"px";}
+  function hideTip(){tip.classList.remove("on");}
+  document.addEventListener("mouseover",function(e){var el=e.target.closest(".lt");if(el)showTip(el);});
+  document.addEventListener("mouseout",function(e){if(e.target.closest(".lt"))hideTip();});
+  document.addEventListener("click",function(e){var el=e.target.closest(".lt");if(el&&srcOf(el)){showTip(el);clearTimeout(tipT);tipT=setTimeout(hideTip,2600);}});
+  document.getElementById("scroller").addEventListener("scroll",hideTip,{passive:true});
 
   /* ---------- Navigation ---------- */
   var views=[].slice.call(document.querySelectorAll(".view"));
